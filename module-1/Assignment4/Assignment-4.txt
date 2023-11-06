@@ -1,0 +1,49 @@
+Functions and Methods in C#
+
+Objective: Learn about functions and methods in C#.
+
+Task: In this assignment, you will write a C# program that defines and uses a custom function or method to perform a specific task. You will also explain the purpose of the function/method and how it is called within your program.
+
+Part 1: Writing the Function/Method (50 points)
+
+Write a custom function or method in C# that accomplishes a specific task. Here are some examples of tasks you can choose from (or you can come up with your own):
+
+Factorial Calculator: Write a function that calculates the factorial of a positive integer entered by the user.
+
+Palindrome Checker: Write a function that checks if a given string is a palindrome (reads the same forwards and backwards).
+
+Sum of Even Numbers: Write a function that calculates the sum of all even numbers in a given range (e.g., 1 to 10).
+
+Prime Number Checker: Write a function that checks if a given integer is a prime number.
+
+Choose one of these tasks or create your own, but make sure it involves defining a custom function or method.
+
+Part 2: Using the Function/Method (50 points)
+
+Write a C# program that does the following:
+
+Prompts the user to input data (e.g., a number, a string, a range of numbers, etc.) as needed for the task your function/method performs.
+
+Calls the custom function/method you defined in Part 1 to perform the task.
+
+Displays the result or output of the function/method to the user.
+
+Part 3: Explanation (50 points)
+
+In a separate section of your assignment, provide an explanation of the following:
+
+The purpose of the custom function/method you defined.
+How the function/method is defined, including its parameters and return type (if any).
+How the function/method is called within your program, including any arguments passed.
+The expected output or result of the function/method based on different inputs (if applicable).
+Submission: Submit the following for your assignment:
+
+The source code of your C# program, including the custom function/method.
+The explanation section as described in Part 3.
+Grading Criteria:
+
+Correctness and functionality of the custom function/method.
+Proper handling of user input and calling of the function/method.
+Adherence to C# coding conventions and best practices.
+Clarity and completeness of the explanation section.
+Overall presentation and organization of the assignment.

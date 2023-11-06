@@ -1,0 +1,104 @@
+Structuring a C# Application
+
+Objective: Learn how to structure a C# application by organizing code into classes and modules.
+
+Task: In this assignment, you will practice structuring a C# application by designing a class diagram for a hypothetical application scenario (e.g., an inventory management system). Your objective is to represent the main classes and their relationships using a class diagram. After designing the class diagram, you will implement the class structure in C# code, emphasizing encapsulation and modularity. Create separate class files for each class and demonstrate how they interact within the application.
+
+Requirements:
+
+Choose a Scenario: Select a hypothetical application scenario that involves multiple classes and interactions. For example, you can choose an inventory management system, a banking application, or a student information system.
+
+Class Diagram: Create a class diagram that illustrates the main classes, their attributes (properties), methods, and relationships. Use appropriate UML notation for classes, attributes, methods, and associations.
+
+C# Implementation: Write C# code to implement the class structure defined in your class diagram. Each class should have its own separate .cs file. Focus on encapsulation and modularity, ensuring that classes are well-organized and follow best practices.
+
+Interactions: Demonstrate how the classes interact within the application. Provide example code that creates instances of your classes, calls methods, and accesses properties to simulate real-world interactions.
+
+Example Explanation:
+
+In an inventory management system, you might have classes like Product, Inventory, and Supplier. These classes may have attributes like product name, quantity, supplier details, and methods for adding, updating, and retrieving inventory items.
+
+Example (Class Diagram):
+
+[Inventory Management System Class Diagram]
+
+Product
+
+Attributes: ProductID, Name, Description, Quantity
+Methods: AddProduct, UpdateProduct, GetProductDetails
+Inventory
+
+Attributes: InventoryID, Products (List of Product objects)
+Methods: AddToInventory, RemoveFromInventory, GetInventoryStatus
+Supplier
+
+Attributes: SupplierID, Name, ContactInfo
+Methods: AddSupplier, UpdateSupplier, GetSupplierDetails
+Example (Code):
+
+
+// Product.cs
+public class Product
+{
+    public int ProductID { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public int Quantity { get; set; }
+
+    public void AddProduct()
+    {
+        // Implementation of adding a product to the inventory
+    }
+
+    // Other methods...
+}
+
+// Inventory.cs
+public class Inventory
+{
+    public int InventoryID { get; set; }
+    public List<Product> Products { get; set; }
+
+    public void AddToInventory(Product product)
+    {
+        // Implementation of adding a product to the inventory
+    }
+
+    // Other methods...
+}
+
+// Supplier.cs
+public class Supplier
+{
+    public int SupplierID { get; set; }
+    public string Name { get; set; }
+    public string ContactInfo { get; set; }
+
+    public void AddSupplier()
+    {
+        // Implementation of adding a new supplier
+    }
+
+    // Other methods...
+}
+
+// Program.cs
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Create instances of classes and demonstrate interactions...
+        // Example code to simulate interactions...
+    }
+}
+
+
+Submission: Submit your class diagram (you can draw it on paper and scan it or use digital tools) along with the source code of your C# implementation. Provide explanations or comments in the code where necessary to clarify the logic.
+
+Grading Criteria:
+
+Clarity and completeness of the class diagram.
+Proper implementation of classes and methods in C#.
+Appropriate use of encapsulation and modularity.
+Correct demonstration of interactions among classes in the code.
+Code readability and adherence to best practices.

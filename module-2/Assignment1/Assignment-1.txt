@@ -1,0 +1,67 @@
+OOP Principles in Action in C#
+
+Objective: Apply object-oriented programming (OOP) principles in C# to design and implement a class hierarchy for a real-world scenario.
+
+Task: In this assignment, you will choose a real-world scenario (e.g., a library management system) and design a class hierarchy that represents the main entities in the scenario (e.g., books, authors, patrons). You will then implement the class hierarchy in C# code, demonstrating inheritance and encapsulation principles. Include constructors, properties, and methods in your classes.
+
+Requirements:
+
+Choose a real-world scenario (e.g., library management, school administration) as the basis for your class hierarchy.
+
+Design and implement a class hierarchy in C# that includes at least three classes representing different entities in the scenario. For example, if you choose a library management system, you might have classes for Book, Author, and Patron.
+
+Demonstrate the use of inheritance by creating a relationship between the classes in your hierarchy. For example, you could have a base class like LibraryItem and derive specific classes like Book and DVD from it.
+
+Implement encapsulation by using properties and access modifiers to control access to the class members (fields, properties, methods).
+
+Include constructors in your classes to initialize object properties.
+
+Implement methods in your classes that demonstrate their functionality within the chosen scenario. For example, a Book class might have a method for checking out the book.
+
+Example Scenario (Library Management System):
+
+
+// Base class representing library items
+class LibraryItem
+{
+    public int ItemId { get; set; }
+    public string Title { get; set; }
+    // ...
+}
+
+// Derived class for books
+class Book : LibraryItem
+{
+    public string Author { get; set; }
+    public int Pages { get; set; }
+
+    public void CheckOut(string patronName)
+    {
+        // Implement check-out logic here
+    }
+}
+
+// Derived class for patrons
+class Patron
+{
+    public int PatronId { get; set; }
+    public string Name { get; set; }
+
+    public void BorrowBook(Book book)
+    {
+        // Implement borrowing logic here
+    }
+}
+
+
+
+Submission: Submit the source code of your C# class hierarchy along with a brief description of the chosen scenario and explanations of your design choices.
+
+Grading Criteria:
+
+Appropriateness of the chosen real-world scenario.
+Correct implementation of a class hierarchy demonstrating inheritance.
+Proper use of encapsulation principles (properties and access modifiers).
+Inclusion of constructors for initializing object properties.
+Implementation of methods that demonstrate the functionality of the classes within the scenario.
+Adherence to C# coding conventions and best practices.

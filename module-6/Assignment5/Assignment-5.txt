@@ -1,0 +1,38 @@
+Building a RESTful API with ASP.NET Core
+
+Objective: Explore the development of RESTful APIs using ASP.NET Core.
+
+Task: In this assignment, you will dive into the world of RESTful APIs (Representational State Transfer) and understand their significance in modern web development. You will create an ASP.NET Core project that serves as a RESTful API and implement endpoints for performing CRUD (Create, Read, Update, Delete) operations on a resource, such as articles, tasks, or any other relevant entity.
+
+Instructions:
+
+Research RESTful APIs: Begin by researching what a RESTful API is and why it is crucial in modern web development. Understand the principles of REST, including statelessness, the use of HTTP methods (GET, POST, PUT, DELETE), and resource-based URL structures.
+
+Create an ASP.NET Core API Project: Using Visual Studio or another code editor, create a new ASP.NET Core API project. Ensure that you choose a project template that supports building RESTful APIs.
+
+Define the Resource: Decide on the type of resource your API will manage (e.g., articles, tasks). Define the data structure for this resource, including attributes and properties.
+
+Implement CRUD Endpoints: Create endpoints in your API for performing CRUD operations on the chosen resource. For example, you might have endpoints for creating, retrieving, updating, and deleting resource items.
+
+Test the API: Utilize tools like Postman or a web browser to test your RESTful API. Verify that each endpoint works as expected, allowing you to interact with the resource.
+
+Validation and Error Handling: Implement validation checks for incoming data and proper error handling for various scenarios. Ensure that your API provides meaningful error messages.
+
+Documentation: In your submission, provide documentation (PDF or Word) explaining the principles of REST, the purpose of your API, and how it aligns with RESTful principles. Describe your experience in creating the API, including any challenges faced and how you addressed them.
+
+Example Usage:
+
+For instance, you could explain the principles of REST, such as using HTTP methods to perform specific actions (e.g., GET for retrieval, POST for creation), and how these principles guide the design of your API.
+
+Submission: Submit your ASP.NET Core RESTful API project, including the source code, and the document (PDF or Word) that explains the principles of REST, the purpose of your API, and your experience in creating it.
+
+Grading Criteria:
+
+Clear explanation of RESTful API principles and their importance.
+Creation of a functional ASP.NET Core RESTful API.
+Successful implementation of CRUD endpoints.
+Effective testing and validation of the API.
+Quality of documentation and insights shared.
+
+
+

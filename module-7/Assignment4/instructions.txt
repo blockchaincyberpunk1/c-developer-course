@@ -1,0 +1,157 @@
+Step 1: Types of Database Relationships
+
+Begin by explaining the commonly used types of relationships in relational databases:
+
+One-to-One (1:1): In a one-to-one relationship, one record in the first table is related to one record in the second table, and vice versa. For example, consider a database with tables for "Person" and "Passport." Each person has one passport, and each passport belongs to one person.
+
+One-to-Many (1:N): In a one-to-many relationship, one record in the first table can be related to multiple records in the second table, but each record in the second table is related to only one record in the first table. For example, consider a database with tables for "Author" and "Book." Each author can write multiple books, but each book is written by only one author.
+
+Many-to-Many (N:M): In a many-to-many relationship, multiple records in the first table can be related to multiple records in the second table. For example, consider a database with tables for "Student" and "Course." Each student can enroll in multiple courses, and each course can have multiple students.
+
+Step 2: Database Setup
+
+Create a database for your assignment that includes tables with different types of relationships. For this example, let's create a SQLite database with tables for "Author," "Book," and "Category." Here's a simplified schema:
+
+sql
+Copy code
+CREATE TABLE Author (
+    AuthorId INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT
+);
+
+CREATE TABLE Book (
+    BookId INTEGER PRIMARY KEY AUTOINCREMENT,
+    Title TEXT,
+    AuthorId INTEGER,
+    FOREIGN KEY (AuthorId) REFERENCES Author(AuthorId)
+);
+
+CREATE TABLE Category (
+    CategoryId INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT
+);
+
+CREATE TABLE BookCategory (
+    BookId INTEGER,
+    CategoryId INTEGER,
+    PRIMARY KEY (BookId, CategoryId),
+    FOREIGN KEY (BookId) REFERENCES Book(BookId),
+    FOREIGN KEY (CategoryId) REFERENCES Category(CategoryId)
+);
+Step 3: C# Application Development
+
+Develop a C# application that interacts with the database using Entity Framework. Here's a simplified example:
+
+csharp
+Copy code
+using System;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+
+namespace EFRelationshipsExample
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            using (var context = new ApplicationDbContext())
+            {
+                // Create authors
+                var author1 = new Author { Name = "John Smith" };
+                var author2 = new Author { Name = "Jane Doe" };
+                context.Authors.AddRange(author1, author2);
+                context.SaveChanges();
+
+                // Create books
+                var book1 = new Book { Title = "Book 1", AuthorId = author1.AuthorId };
+                var book2 = new Book { Title = "Book 2", AuthorId = author1.AuthorId };
+                context.Books.AddRange(book1, book2);
+                context.SaveChanges();
+
+                // Create categories
+                var category1 = new Category { Name = "Fiction" };
+                var category2 = new Category { Name = "Science Fiction" };
+                context.Categories.AddRange(category1, category2);
+                context.SaveChanges();
+
+                // Associate books with categories
+                book1.BookCategories.Add(new BookCategory { CategoryId = category1.CategoryId });
+                book2.BookCategories.Add(new BookCategory { CategoryId = category2.CategoryId });
+                context.SaveChanges();
+
+                // Retrieve and display book details with their author and categories
+                var books = context.Books
+                    .Include(b => b.Author)
+                    .Include(b => b.BookCategories)
+                    .ThenInclude(bc => bc.Category)
+                    .ToList();
+
+                foreach (var book in books)
+                {
+                    Console.WriteLine($"Title: {book.Title}, Author: {book.Author.Name}");
+                    foreach (var bookCategory in book.BookCategories)
+                    {
+                        Console.WriteLine($"Category: {bookCategory.Category.Name}");
+                    }
+                    Console.WriteLine();
+                }
+            }
+        }
+    }
+
+    public class ApplicationDbContext : DbContext
+    {
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Category> Categories { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlite("Data Source=sample.db");
+        }
+    }
+
+    public class Author
+    {
+        public int AuthorId { get; set; }
+        public string Name { get; set; }
+        public virtual ICollection<Book> Books { get; set; } = new List<Book>();
+    }
+
+    public class Book
+    {
+        public int BookId { get; set; }
+        public string Title { get; set; }
+        public int AuthorId { get; set; }
+        public virtual Author Author { get; set; }
+        public virtual ICollection<BookCategory> BookCategories { get; set; } = new List<BookCategory>();
+    }
+
+    public class Category
+    {
+        public int CategoryId { get; set; }
+        public string Name { get; set; }
+        public virtual ICollection<BookCategory> BookCategories { get; set; } = new List<BookCategory>();
+    }
+
+    public class BookCategory
+    {
+        public int BookId { get; set; }
+        public int CategoryId { get; set; }
+        public virtual Book Book { get; set; }
+        public virtual Category Category { get; set; }
+    }
+}
+Step 4: Documentation
+
+Include detailed documentation in your assignment, explaining how Entity Framework is used in your C# application to interact with related data. Discuss the code structure, entity classes, context, and how relationships are handled using Entity Framework.
+
+Step 5: Submission
+
+Compile your explanations of relationship types, the database schema, the code for your C# application, and the detailed documentation into a document (PDF or Word).
+
+Submit the document as your assignment submission.
+
+Example Usage
+
+Explain one-to-one, one-to-many, and many-to-many relationships, and demonstrate how your C# application manages these relationships using Entity Framework. In your documentation, detail each CRUD operation and how EF handles relationships.

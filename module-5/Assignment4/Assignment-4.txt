@@ -1,0 +1,45 @@
+WPF Data Binding
+
+Objective: Learn about data binding in WPF and how it simplifies the synchronization of user interface elements with data sources.
+
+Task: In this assignment, you will explore the concept of data binding in Windows Presentation Foundation (WPF). Data binding allows for the automatic synchronization of user interface (UI) elements with data sources, making it a powerful tool for building interactive applications. You will develop a WPF application that demonstrates data binding by connecting UI elements to a data source (e.g., a list of items) and enabling users to interact with and update the data source through the UI.
+
+Instructions:
+
+Understanding Data Binding: Begin by explaining what data binding is in the context of WPF. Describe how data binding simplifies the process of connecting UI elements to data sources, allowing for real-time updates without manual intervention.
+
+Scenario Selection: Choose a hypothetical scenario for your WPF application. For example, you can create a to-do list application, a simple inventory management system, or a contact list.
+
+Data Source Creation: Create a data source in your C# code (e.g., a collection or list) that represents the data to be displayed and manipulated in your WPF application. Populate the data source with sample data.
+
+User Interface Design: Design the user interface (UI) of your WPF application using XAML. Include UI elements that are relevant to your chosen scenario and the data source you created. These UI elements can include textboxes, labels, buttons, lists, or any other controls.
+
+Data Binding: Implement data binding in your XAML by connecting the UI elements to the data source. Use data binding expressions to specify how each UI element should display or manipulate data from the source.
+
+Interactivity: Implement functionality in your application to allow users to interact with the data source through the UI. For example, if you're building a to-do list app, users should be able to add, edit, and remove tasks using the UI.
+
+Two-Way Data Binding: Utilize two-way data binding where appropriate. This means that changes made in the UI should also update the data source and vice versa.
+
+Validation (Optional): Implement basic validation to ensure that user inputs are valid before updating the data source. For example, validate that a task name is not empty before adding it to the to-do list.
+
+Testing: Thoroughly test your application to ensure that data binding works as expected. Test various scenarios, including adding, updating, and deleting items from the data source.
+
+Documentation: Provide comments in your XAML and C# code to explain how data binding is implemented. Explain any validation logic you've added.
+
+User Instructions: Include a README file that explains how to run the WPF application and how to use its features.
+
+Example Usage:
+
+When a user runs your WPF application, they should see a user-friendly interface that displays data from the data source. Users should be able to interact with the data source through the UI, and changes made in the UI should reflect in the data source and vice versa.
+
+Submission: Submit the complete WPF project, including all XAML and C# source code, the data source initialization code, and the README file with instructions for running and using the application.
+
+Grading Criteria:
+
+Correct implementation of data binding in the WPF application.
+Proper user interface design with relevant UI elements.
+Functional implementation of data source manipulation through the UI.
+Effective use of two-way data binding.
+Proper validation, if implemented.
+Code should be well-documented with comments.
+Instructions in the README file should be clear and concise.

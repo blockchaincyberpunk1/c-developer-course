@@ -1,0 +1,41 @@
+Windows Forms Application
+
+Objective: Build a functional Windows Forms application.
+
+Task: In this assignment, you will design and implement a Windows Forms application for a hypothetical scenario. Your task is to create a task management tool using Windows Forms and C#. This tool should allow users to add tasks, mark tasks as complete, and delete tasks.
+
+Instructions:
+
+Scenario Selection: Choose a hypothetical scenario for your task management application. For example, you can create a to-do list application, a project task manager, or a personal task organizer.
+
+User Interface Design: Design the user interface (UI) of your Windows Forms application. The UI should include elements such as labels, textboxes, buttons, and a list or grid to display tasks.
+
+Functionality Implementation: Implement the functionality of your application using C#. Here are the key features your application should have:
+
+Add Task: Users should be able to enter a task description and add it to the list of tasks.
+Display Tasks: The application should display a list of tasks, including their descriptions and completion status.
+Mark Task as Complete: Users should be able to mark a task as complete by selecting it in the list.
+Delete Task: Users should be able to delete a task from the list.
+Clear All Tasks: Include a feature to clear all tasks from the list.
+Event Handling: Implement event handlers for user interactions, such as button clicks, to execute the corresponding functionality.
+
+Documentation: Provide comments in your code to explain the purpose of each component and event handler.
+
+Testing: Thoroughly test your application to ensure that all features work as expected. Test various scenarios, including adding, completing, and deleting tasks.
+
+User Instructions: Include a README file that explains how to run the Windows Forms application and how to use its features.
+
+Example Usage:
+
+When a user runs your application, they should see a window with a list of tasks, an input field to add new tasks, and buttons to mark tasks as complete or delete them. Users should be able to interact with the application to manage their tasks effectively.
+
+Submission: Submit the complete C# project, including all source code and the README file with instructions for running and using the application.
+
+Grading Criteria:
+
+Correct implementation of the Windows Forms application.
+Proper user interface design, including controls for adding, displaying, marking, and deleting tasks.
+Functional implementation of task management features.
+Proper event handling for user interactions.
+Code should be well-documented with comments.
+Instructions in the README file should be clear and concise.

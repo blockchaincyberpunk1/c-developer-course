@@ -1,0 +1,37 @@
+ASP.NET Core MVC
+
+Objective: Study the Model-View-Controller (MVC) architecture in ASP.NET Core.
+
+Task: In this assignment, you will delve into the Model-View-Controller (MVC) architectural pattern and its benefits in web development. You will then apply your knowledge by developing an ASP.NET Core MVC application that includes models, views, and controllers. Implement a basic functionality, such as a to-do list, using MVC principles.
+
+Instructions:
+
+Research MVC Architecture: Begin by researching the MVC architectural pattern and its significance in web application development. Understand the roles of models, views, and controllers and how they interact to create a structured and maintainable web application.
+
+Create an ASP.NET Core MVC Application: Using Visual Studio or another code editor, create a new ASP.NET Core MVC application project. Choose an appropriate template that aligns with your intended functionality (e.g., MVC with Razor Pages).
+
+Implement Models: Design and implement one or more models for your application. For example, if you are creating a to-do list, your model might represent tasks with attributes like task name, due date, and status.
+
+Create Views: Develop views that display data and interact with users. Design the user interface to allow users to interact with your application (e.g., adding, editing, or deleting tasks). Use Razor syntax for view templates.
+
+Write Controllers: Implement controllers that handle user input and manage the interaction between models and views. Include actions for tasks such as creating, editing, and deleting items.
+
+Implement Functionality: Build the functionality for your application based on MVC principles. Ensure that models, views, and controllers work together seamlessly.
+
+Testing: Thoroughly test your ASP.NET Core MVC application to verify that it functions as expected. Test various scenarios, including adding, editing, and deleting items, to ensure robustness.
+
+Documentation: In your submission, provide documentation (PDF or Word) that explains the MVC architectural pattern, its benefits, and how you applied it in your ASP.NET Core MVC application. Describe your experience in creating the application and any challenges you encountered.
+
+Example Usage:
+
+For instance, you might explain that the MVC pattern promotes separation of concerns, making it easier to maintain and extend web applications. You could also highlight how controllers handle user requests, models represent data, and views present the data to users.
+
+Submission: Submit your ASP.NET Core MVC application project, including the source code, and the document (PDF or Word) that explains the MVC architecture, its benefits, and your experience in creating the application.
+
+Grading Criteria:
+
+Clear explanation of the MVC architectural pattern and its benefits.
+Creation of a functional ASP.NET Core MVC application.
+Successful implementation of models, views, and controllers.
+Effective testing of the application.
+Quality of documentation and insights shared.

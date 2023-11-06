@@ -1,0 +1,35 @@
+Contribution to Open Source
+
+Objective: Contribute to open-source C# projects and gain practical experience in collaborative coding.
+
+Task: In this assignment, you will actively contribute to open-source C# projects hosted on platforms like GitHub or GitLab. Your contributions can include fixing bugs, adding new features, improving documentation, or any other meaningful enhancements to the project. This assignment will provide you with valuable experience in real-world collaborative coding and open-source development.
+
+Instructions:
+
+Select a Project (150 words): Search for open-source C# projects on platforms like GitHub or GitLab. Choose a project that aligns with your interests and expertise. Explain why you selected this particular project.
+
+Fork and Set Up (100 words): Fork the chosen project's repository to create your own copy. Clone the forked repository to your local development environment. Ensure that you have all the necessary tools and dependencies to work on the project.
+
+Choose and Implement Contributions (300 words): Over the course of two weeks, actively contribute to the project by:
+
+Identifying Issues: Review the project's issue tracker to find tasks that you can address. Look for issues labeled as "good first issue" or "beginner-friendly" if you are new to the project.
+Implementing Changes: Choose one or more issues to work on. Make meaningful code contributions to the project, which may include fixing bugs, adding new features, improving code quality, or enhancing documentation.
+Testing: Ensure that your changes are thoroughly tested and do not introduce new issues.
+Committing and Pushing: Commit your changes to your forked repository and push them to your remote branch.
+Submit Pull Requests (200 words): Submit one or more pull requests to the original project's repository. Ensure that your pull requests are clear, well-documented, and follow any guidelines provided by the project maintainers.
+
+Document Contributions (150 words): Keep a detailed log of your contributions, including the issues you addressed, the code changes you made, and any discussions with project maintainers or contributors.
+
+Impact Assessment (200 words): Reflect on the impact of your contributions on the open-source project. Discuss any feedback or reviews you received from maintainers or contributors.
+
+Submission (100 words): Compile your documented contributions, reflections, links to pull requests, and any relevant communication into a single document (PDF or Word). Prepare your submission for evaluation.
+
+Grading Criteria:
+
+Your assignment will be evaluated based on the following criteria:
+
+Contribution Quality: The quality and significance of your contributions to the open-source project.
+Pull Requests: The clarity and adherence to guidelines in your pull requests.
+Documentation: The completeness and organization of your documented contributions.
+Impact Assessment: The reflection on the impact of your contributions on the project.
+Overall Engagement: The depth of your involvement in the open-source project during the assignment period.

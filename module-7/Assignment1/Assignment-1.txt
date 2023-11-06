@@ -1,0 +1,45 @@
+Database Concepts and SQL Basics
+
+Objective: Understand fundamental database concepts and SQL querying.
+
+Task: In this assignment, you will explore the fundamental concepts of databases and SQL (Structured Query Language). You will explain key database concepts and write SQL queries to perform basic operations on a hypothetical database.
+
+Instructions:
+
+Research Database Concepts: Begin by researching and understanding the fundamental concepts of databases. Explain the following concepts:
+
+Tables: What are tables in a database, and how are they used to store data?
+Rows and Columns: Describe the structure of tables, including rows and columns.
+Keys: Explain primary keys and foreign keys and their importance in database design.
+Relationships: Describe how tables can be related to each other through keys.
+Hypothetical Database: Imagine a hypothetical database for a library. It contains two tables: Books and Authors. The Books table includes columns such as BookID, Title, AuthorID, and PublicationYear. The Authors table includes columns like AuthorID, FirstName, and LastName.
+
+SQL Queries: Write SQL queries to perform the following operations on the hypothetical database:
+
+a. Selecting Data:
+
+Write a query to select all books from the Books table.
+Write a query to select the title and publication year of books published in 2020.
+b. Inserting Data:
+
+Write a query to insert a new book into the Books table. Include values for all relevant columns.
+c. Updating Data:
+
+Write a query to update the publication year of a specific book in the Books table.
+d. Deleting Data:
+
+Write a query to delete an author from the Authors table along with all their associated books from the Books table.
+Explanations: Alongside each SQL query, provide explanations for what the query does and how it achieves the desired result.
+
+Example Usage:
+
+For example, you can explain that SQL SELECT queries retrieve data from a table, and you can specify the columns you want to retrieve. SQL INSERT queries add new records to a table, and you provide values for each column.
+
+Submission: Submit a document (PDF or Word) containing the explanations of the key database concepts and the SQL queries you wrote. Include explanations for each query.
+
+Grading Criteria:
+
+Clear explanations of key database concepts.
+Correct SQL queries that perform the specified operations.
+Accurate and concise explanations for each SQL query.
+Properly formatted and organized submission.

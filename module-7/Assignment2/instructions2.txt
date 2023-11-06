@@ -1,0 +1,70 @@
+Step 1: Relational Database Design Process
+
+Begin by explaining the process of designing a relational database:
+
+Identifying Requirements and Objectives:
+The initial step in designing a relational database is to identify its requirements and objectives. This process involves understanding the purpose of the database, what data it will store, and how that data will be utilized. For example, if we're designing a library database, we must identify the kinds of data we need to manage, such as books, authors, borrowers, and due dates.
+
+Defining Entities and Attributes:
+After grasping the requirements, we can define the entities and attributes. Entities signify real-world objects or concepts (e.g., Books, Authors), while attributes denote properties of those entities (e.g., Title, AuthorID, PublicationYear). For example, an Author entity might encompass attributes such as AuthorID, FirstName, and LastName.
+
+Specifying Data Types:
+For each attribute, we must specify an appropriate data type that dictates what kind of data can be held in it. Common data types include text, integer, date, decimal, and others. For instance, Title could be of data type text, AuthorID might be an integer, and PublicationYear could be a date.
+
+Normalizing the Database:
+Normalization is a crucial step to organize data, reduce redundancy, and enhance data integrity. This involves decomposing large tables into smaller ones and connecting them through relationships. Normalization helps eliminate data anomalies and improves database efficiency. For example, we might decompose a single table of Books into separate tables for Authors and Books, linked using AuthorID.
+
+Creating Relationships:
+Relationships between tables are established using keys, particularly primary keys and foreign keys. A primary key guarantees each record in a table is unique, while a foreign key links records in one table to records in another. For instance, the AuthorID in the Books table might serve as a foreign key, linking to the primary key of the Authors table.
+
+Step 2: Hypothetical Database Scenario
+
+Let's choose a hypothetical scenario for our database design: an online store. Our database will include tables for Customers, Orders, Products, and OrderDetails.
+
+Step 3: Database Schema Design
+
+Table 1: Customers
+
+Attributes:
+CustomerID (Primary Key)
+FirstName
+LastName
+Email
+Address
+Table 2: Orders
+
+Attributes:
+OrderID (Primary Key)
+CustomerID (Foreign Key)
+OrderDate
+Status
+Table 3: Products
+
+Attributes:
+ProductID (Primary Key)
+Name
+Description
+Price
+Table 4: OrderDetails
+
+Attributes:
+OrderDetailID (Primary Key)
+OrderID (Foreign Key)
+ProductID (Foreign Key)
+Quantity
+Subtotal
+Step 4: Normalization
+
+Normalization involves organizing data efficiently. In our scenario, we've normalized the data by decomposing it into separate tables: Customers, Orders, Products, and OrderDetails. This decomposition eliminates redundancy and ensures data consistency. For example, instead of duplicating customer information in each order, we link orders to customers using the CustomerID foreign key.
+
+Normalization also ensures that updates (e.g., changing a customer's address) need only be made in one place, improving data integrity.
+
+Submission:
+
+Compile your explanations of the relational database design process, the hypothetical database schema, and the importance of normalization into a document (PDF or Word). Ensure each concept is clearly explained and that your database schema is logically structured.
+
+Submit the document as your assignment submission.
+
+
+
+

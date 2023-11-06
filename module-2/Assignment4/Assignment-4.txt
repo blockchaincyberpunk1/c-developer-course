@@ -1,0 +1,63 @@
+Lambda Expressions
+
+Objective: Explore lambda expressions in C#.
+
+Task: In this assignment, you will write a C# program that uses lambda expressions to perform various tasks like sorting a list of objects, filtering data, or transforming data. Provide examples of lambda expressions used in your program and explain how they simplify code and enhance readability.
+
+Requirements:
+
+Select a scenario: Choose a scenario where lambda expressions can be beneficial. For example, you can work with a collection of objects that need sorting, filtering, or transformation.
+
+Write a C# program: Create a C# program (e.g., Program.cs) to implement your scenario. In this program, you should use lambda expressions to achieve specific tasks.
+
+Use lambda expressions: Utilize lambda expressions for tasks like sorting objects in a list, filtering data based on specific conditions, or transforming data elements.
+
+Explain the lambda expressions: For each lambda expression used in your program, provide a comment or explanation to clarify its purpose and how it simplifies the code or enhances readability.
+
+Example (Sorting a List of Students by Name):
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class Program
+{
+    static void Main()
+    {
+        // Create a list of students
+        List<Student> students = new List<Student>
+        {
+            new Student { Name = "Alice", Age = 25 },
+            new Student { Name = "Bob", Age = 21 },
+            new Student { Name = "Charlie", Age = 23 },
+            new Student { Name = "David", Age = 20 }
+        };
+
+        // Sort students by name using a lambda expression
+        students.Sort((student1, student2) => student1.Name.CompareTo(student2.Name));
+
+        // Display the sorted list
+        Console.WriteLine("Sorted Students by Name:");
+        foreach (var student in students)
+        {
+            Console.WriteLine($"Name: {student.Name}, Age: {student.Age}");
+        }
+    }
+}
+
+class Student
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+
+
+Submission: Submit the source code of your C# program (Program.cs) that demonstrates the use of lambda expressions, along with comments explaining the purpose of each lambda expression.
+
+Grading Criteria:
+
+Correct usage of lambda expressions in the selected scenario.
+Clear and concise explanations provided for each lambda expression.
+Demonstrated understanding of how lambda expressions simplify code and enhance readability.
+Adherence to C# coding conventions and best practices.

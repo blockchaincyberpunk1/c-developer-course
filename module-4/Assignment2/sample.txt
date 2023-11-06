@@ -1,0 +1,36 @@
+Introduction to the Base Class Library (BCL)
+
+The Base Class Library (BCL) is an essential part of the .NET Framework. It is a vast collection of pre-built classes, types, and namespaces that provide fundamental functionality for .NET applications. The BCL simplifies common programming tasks by offering a rich set of reusable components.
+
+Key Components and Namespaces in the BCL
+
+The BCL covers a wide range of functionality, making it a valuable resource for developers. Some of the key components and namespaces available in the BCL include:
+
+System.IO: Used for input and output operations, such as reading and writing files and directories.
+System.Net: Provides classes for network communication, including web requests and sockets.
+System.Collections: Contains classes for various types of collections, such as lists, dictionaries, and queues.
+System.Data: Offers classes for data access and database interactions.
+
+These are just a few examples, and there are many more namespaces available in the BCL, each serving a specific purpose.
+
+Selected Namespace - System.IO
+
+The System.IO namespace is a crucial part of the BCL, and it is primarily used for working with input and output operations in .NET applications. This namespace offers classes and methods for tasks related to files and directories. Here's an overview of its purpose and functionality:
+
+Purpose: System.IO provides developers with the tools to perform file and directory operations, such as creating, reading, writing, and managing files and folders.
+
+Common Classes and Methods in System.IO
+
+Within the System.IO namespace, several common classes and methods are frequently used by developers. Let's explore a few of them:
+
+File Class: The File class offers methods for working with files. Some common methods include:
+
+File.Exists(filePath): Checks if a file exists at the specified path.
+File.Copy(sourceFilePath, destinationFilePath): Copies a file from one location to another.
+File.ReadAllText(filePath): Reads the contents of a text file.
+
+Directory Class: The Directory class is used for working with directories. Common methods include:
+
+Directory.CreateDirectory(directoryPath): Creates a new directory.
+Directory.GetFiles(directoryPath): Retrieves a list of files in a directory.
+Directory.GetDirectories(directoryPath): Retrieves a list of subdirectories in a directory.

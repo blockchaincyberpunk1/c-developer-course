@@ -1,0 +1,56 @@
+Mini Project - Collection Library Application
+
+Objective: Build a simple C# application that demonstrates the use of various collection classes.
+
+Task: In this assignment, you will create a console-based application, "Collection Library," that utilizes different collection classes available in the .NET Framework. The purpose of this application is to showcase how various collections, including arrays, lists, and dictionaries, can be used effectively in a practical scenario. The application will function as a library of collections, where each collection represents a category of items.
+
+Application Features:
+
+Main Menu: The application should provide a main menu with the following options:
+
+View Collections: List all available collections (e.g., Books, Movies, Music).
+Manage Collection: Choose a collection to add, edit, or search for items.
+Exit: Exit the application.
+View Collections:
+
+List all available collections, each with a unique ID. For example:
+
+1. Books
+2. Movies
+3. Music
+
+
+Manage Collection:
+
+Allow users to choose a collection by entering its ID.
+Within a collection, provide the following options:
+View Items: List all items in the selected collection.
+Add Item: Add a new item to the collection.
+Edit Item: Modify the details of an existing item.
+Search Item: Search for an item by a unique identifier (e.g., ISBN for books).
+Return to Main Menu: Go back to the main menu.
+Data Structure: Implement each collection category using a suitable collection class:
+
+Books: Use a List<Book> to store book objects.
+Movies: Use a List<Movie> to store movie objects.
+Music: Use a Dictionary<string, Music> to store music items, where the key is a unique identifier (e.g., track number).
+Item Details: Define appropriate classes (e.g., Book, Movie, Music) to represent item details (e.g., title, author, year) and use them within your collection classes.
+
+User Input: Prompt the user for input to navigate through the application and perform actions like adding, editing, and searching for items.
+
+Validation: Implement input validation to ensure that the user provides correct input, such as valid collection IDs and item identifiers during searches.
+
+Example Usage:
+
+The user can choose the "Books" collection, view its items, add new books, edit existing book details, and search for books by ISBN.
+The user can navigate to the "Music" collection, view tracks, add new music items, edit track details, and search for tracks by their unique identifier (e.g., track number).
+Submission: Submit the complete C# project, including all source code and any necessary instructions for running the application. Ensure that your code is well-documented with comments.
+
+Grading Criteria:
+
+Correct implementation of the main menu, sub-menus, and user navigation.
+Proper use of collection classes for managing different categories.
+Effective handling of data structures and item details.
+Validation of user inputs to prevent errors.
+Clarity and usability of the application interface.
+Adherence to best practices in C# programming.

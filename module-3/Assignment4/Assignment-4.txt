@@ -1,0 +1,73 @@
+Custom Exception Classes
+
+Objective: Learn how to create and use custom exception classes in C#.
+
+Task: In this assignment, you will explore the creation and utilization of custom exception classes in C#. Your objective is to define a custom exception class (e.g., CustomAppException) that extends the built-in Exception class. You will then write a C# program that uses this custom exception class to handle specific application-related errors. Provide examples of when and how this custom exception class is used in your program.
+
+Requirements:
+
+Custom Exception Class: Create a custom exception class named CustomAppException that extends the built-in Exception class. Define at least one custom property or field within this class (e.g., ErrorCode) to convey additional information about the exception.
+
+C# Program: Write a C# program that simulates a scenario where your custom exception class is used to handle application-related errors. This scenario should involve code that could potentially throw your custom exception. Provide comments in your code to explain its purpose and the situations where the custom exception is raised.
+
+Usage of Custom Exception: In your program, demonstrate how to throw and catch instances of your CustomAppException. Include examples where you set custom properties or fields in the exception object to convey specific error information.
+
+Explanation: Include a clear explanation of the purpose of your custom exception class, the scenarios it addresses, and why it is beneficial to use custom exceptions in C# applications.
+
+Example Explanation:
+
+Custom exception classes are used to handle specific application-related errors and provide additional information about the error. In this assignment, we create a CustomAppException class that extends Exception and includes an ErrorCode property to convey error details. We then use this custom exception class to handle errors in our program, improving error diagnostics.
+
+Example (C# Code):
+
+
+using System;
+
+// Custom exception class
+class CustomAppException : Exception
+{
+    public int ErrorCode { get; }
+
+    public CustomAppException(int errorCode, string message)
+        : base(message)
+    {
+        ErrorCode = errorCode;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        try
+        {
+            // Simulate a scenario where CustomAppException is raised
+            int result = Divide(10, 0); // Division by zero
+            Console.WriteLine("Result: " + result);
+        }
+        catch (CustomAppException ex)
+        {
+            Console.WriteLine($"CustomAppException caught: ErrorCode={ex.ErrorCode}, Message={ex.Message}");
+        }
+    }
+
+    static int Divide(int numerator, int denominator)
+    {
+        if (denominator == 0)
+        {
+            // Throwing CustomAppException with ErrorCode and message
+            throw new CustomAppException(1001, "Division by zero is not allowed.");
+        }
+        return numerator / denominator;
+    }
+}
+
+
+Submission: Submit your C# program along with a clear explanation of your custom exception class and its usage in handling application-related errors. Describe the scenarios in which your custom exception is raised and how it improves error diagnostics.
+
+Grading Criteria:
+
+Creation of a custom exception class (CustomAppException) that extends Exception.
+Proper usage of the custom exception class in the C# program.
+Demonstrated understanding of how custom exceptions can be used to convey specific error information.
+Clarity and completeness of the assignment.

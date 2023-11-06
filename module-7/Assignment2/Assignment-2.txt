@@ -1,0 +1,43 @@
+Relational Database Design
+
+Objective: Study the principles of relational database design.
+
+Task: In this assignment, you will explore the principles of relational database design. You will describe the process of designing a relational database, including defining tables, specifying data types, and creating relationships between tables. You will also design a hypothetical database schema for a scenario of your choice and explain the table structures and relationships.
+
+Instructions:
+
+Relational Database Design Process: Begin by explaining the process of designing a relational database. Describe the key steps involved in designing a database, including:
+
+Identifying the requirements and objectives.
+Defining entities and attributes.
+Specifying data types for each attribute.
+Normalizing the database to reduce redundancy.
+Creating relationships between tables.
+Hypothetical Database Scenario: Choose a hypothetical scenario for your database design. For example, you can choose to design a library database, an e-commerce database, or any other scenario that interests you.
+
+Database Schema Design: Design a relational database schema for your chosen scenario. This schema should include tables, attributes (columns), and relationships between tables. Explain the following aspects:
+
+Define at least two tables with appropriate attributes for your scenario.
+Specify data types for each attribute (e.g., text, integer, date).
+Establish relationships between tables using primary and foreign keys.
+Explain the purpose of each table and how they relate to each other.
+Normalization: Explain the concept of normalization in the context of database design. Discuss the importance of normalization and how it helps in organizing data efficiently.
+
+Submission: Submit a document (PDF or Word) containing the following:
+
+An explanation of the relational database design process.
+The database schema for your chosen scenario, including table structures and relationships.
+Explanations for the purpose of each table and how they are related.
+An explanation of normalization and its significance.
+Example Usage:
+
+For example, you can explain that in the database design process, the first step is to identify the requirements and objectives of the database. Then, you can describe how you defined tables such as Books and Authors for a library database, specifying attributes like BookID, Title, AuthorID, and establishing a relationship between them using foreign keys.
+
+Grading Criteria:
+
+Clear explanation of the relational database design process.
+Well-defined and logically structured database schema.
+Appropriate data types specified for attributes.
+Relationships between tables established correctly.
+Clear explanations of the purpose of each table and how they relate.
+Understanding of normalization principles.

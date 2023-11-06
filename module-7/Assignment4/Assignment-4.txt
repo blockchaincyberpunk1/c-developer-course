@@ -1,0 +1,44 @@
+Entity Framework Relationships
+
+Objective: Learn about handling relationships in Entity Framework.
+
+Task: In this assignment, you will explore how to handle relationships between database tables using Entity Framework. You will describe the types of relationships commonly used in databases, such as one-to-one, one-to-many, and many-to-many. Additionally, you will create a C# application that utilizes Entity Framework to work with a database containing tables with various types of relationships. You will demonstrate how to retrieve and manipulate related data.
+
+Instructions:
+
+Types of Database Relationships: Begin by describing the commonly used types of relationships in relational databases, including:
+
+One-to-One
+One-to-Many
+Many-to-Many
+Database Setup: Create a database for your assignment that includes tables with different types of relationships. You can use an existing database system like SQL Server or SQLite. Define table structures with columns that represent various relationships (e.g., foreign keys).
+
+C# Application Development: Develop a C# application that interacts with the database using Entity Framework. Your application should showcase the following:
+
+Retrieve Data: Demonstrate how to retrieve data from tables with relationships using Entity Framework.
+Create Records: Show how to create records in tables that have one-to-many relationships, ensuring the relationships are correctly established.
+Update Records: Modify records and relationships in the database.
+Delete Records: Remove records while considering the related data in other tables.
+Relationship Handling: Provide examples of how Entity Framework manages relationships between tables. Explain how navigation properties and foreign keys are used to access related data.
+
+Documentation: Include detailed documentation in your assignment, explaining the types of relationships used in the database, the code for your C# application, and how Entity Framework is employed to work with related data.
+
+Submission: Submit a document (PDF or Word) containing the following:
+
+An explanation of the types of relationships used in relational databases.
+Details about your database setup, including table structures and relationships.
+The code for your C# application, demonstrating CRUD operations and relationship handling using Entity Framework.
+Documentation explaining how Entity Framework is used to interact with related data.
+Example Usage:
+
+You can explain one-to-one, one-to-many, and many-to-many relationships, and then demonstrate how your C# application manages these relationships using Entity Framework.
+
+Grading Criteria:
+
+Clear description of types of relationships in databases.
+Proper database setup with tables and relationships.
+Functional C# application showcasing CRUD operations and relationship handling using Entity Framework.
+Detailed documentation explaining the application's functionality and Entity Framework usage for handling relationships.
+
+
+

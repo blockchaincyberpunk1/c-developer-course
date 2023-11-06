@@ -1,0 +1,33 @@
+Mini Project - Choose Your GUI Framework
+
+Objective: Decide between Windows Forms or WPF and create a practical desktop application. Document your choice and reasons behind it.
+
+Task: In this assignment, you have the flexibility to choose between two popular GUI frameworks for desktop application development in C#: Windows Forms and Windows Presentation Foundation (WPF). Your task is to decide which framework you want to use based on your preferences or project requirements, and then create a small-scale desktop application using the chosen framework. Additionally, you should document your choice and explain the reasons behind it.
+
+Instructions:
+
+Framework Selection: Begin by deciding whether you want to use Windows Forms or WPF for your desktop application. You can choose any framework based on your comfort level, interest, or specific project requirements.
+
+Project Concept: Choose a practical and realistic project concept for your desktop application. This could be a task management tool, a simple game, a personal finance tracker, or any other idea that interests you.
+
+Application Development: Develop the desktop application using the selected framework (Windows Forms or WPF). Implement the user interface and the relevant functionality based on your project concept. Ensure that your application has a user-friendly interface and is functional.
+
+Documentation: Document your choice of framework. Explain why you selected either Windows Forms or WPF for this project. Consider factors such as ease of development, available controls, design flexibility, and any specific requirements of your project concept.
+
+User Instructions: Include a README file that provides clear instructions on how to run and use your desktop application. Explain how users can interact with the application and what features it offers.
+
+Testing: Thoroughly test your application to ensure that it works as expected. Check for any bugs or issues and make necessary improvements.
+
+Example Usage:
+
+If you choose Windows Forms for your project, you might create a simple to-do list application. If you choose WPF, you could develop a personal budget tracker. Document your choice and reasons, and ensure that your application is functional and well-documented.
+
+Submission: Submit the complete project, including all source code, resource files (if any), and the README file explaining your choice of framework and providing user instructions.
+
+Grading Criteria:
+
+Clear documentation of the chosen framework with well-explained reasons.
+Functional desktop application with a user-friendly interface.
+Proper testing and bug fixing, if necessary.
+Clarity and completeness of user instructions in the README file.
+Overall code quality and organization.

@@ -1,0 +1,70 @@
+Exception Handling Basics
+
+Objective: Explore the basics of exception handling in C#.
+
+Task: In this assignment, you will learn about exceptions and their significance in C# for robust error handling. You are required to write a C# program that intentionally generates exceptions (e.g., division by zero, null reference) and demonstrates how to catch and handle these exceptions using try-catch blocks.
+
+Requirements:
+
+Understanding Exceptions: Begin by providing a clear and concise explanation of what exceptions are in the context of programming and why they are essential for robust error handling. Describe scenarios where exceptions commonly occur.
+
+C# Program: Write a C# program that includes code segments intentionally designed to generate exceptions. You can use scenarios like attempting to divide by zero, accessing null references, or attempting to read from a non-existent file.
+
+Try-Catch Blocks: Implement try-catch blocks in your program to catch and handle the exceptions that are intentionally generated. Ensure that you provide meaningful error messages or information when handling each exception.
+
+Demonstration: Run your program and demonstrate how each exception is caught and handled. Show that the program continues execution after handling each exception.
+
+Example Explanation:
+
+Exceptions are runtime errors that can occur in a program due to unexpected situations, such as division by zero or trying to access properties or methods of null objects. Handling exceptions allows a program to gracefully respond to these errors without crashing.
+
+Example (C# Code):
+
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Example 1: Division by Zero Exception
+        int numerator = 10;
+        int denominator = 0;
+        try
+        {
+            int result = numerator / denominator; // Attempting division by zero
+            Console.WriteLine("Result of division: " + result);
+        }
+        catch (DivideByZeroException ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+
+        // Example 2: Null Reference Exception
+        string text = null;
+        try
+        {
+            int length = text.Length; // Attempting to access length of null reference
+            Console.WriteLine("Length of text: " + length);
+        }
+        catch (NullReferenceException ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+
+        // Other examples...
+
+        Console.WriteLine("Program continues execution...");
+    }
+}
+
+
+
+Submission: Submit your C# program along with a clear explanation of exceptions and their importance in error handling. Describe the exceptions you intentionally generated in your program and how you handled them using try-catch blocks.
+
+Grading Criteria:
+
+Understanding of exceptions and their importance (clear and concise explanation).
+Proper implementation of try-catch blocks to handle exceptions.
+Correct demonstration of how exceptions are caught and handled in the program.
+Clarity and completeness of the assignment.

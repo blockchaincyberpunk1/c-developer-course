@@ -1,0 +1,97 @@
+Creating an ASP.NET Core MVC application involves several steps. In this guide, I'll walk you through the process of building a simple to-do list application using MVC principles:
+
+Step 1: Research MVC Architecture
+
+Before you begin, it's essential to understand the Model-View-Controller (MVC) architectural pattern and its significance in web development. Research how MVC promotes separation of concerns, making applications more maintainable and extendable.
+
+Step 2: Set Up Your Development Environment
+
+Ensure you have the necessary tools installed:
+
+Install Visual Studio (or use Visual Studio Code) with the ASP.NET Core workload.
+Install the .NET Core SDK.
+Step 3: Create an ASP.NET Core MVC Application
+
+Let's create a simple to-do list application.
+
+Open Visual Studio (or Visual Studio Code).
+
+Go to "File" > "New" > "Project..."
+
+Select "ASP.NET Core Web Application" as your project type.
+
+Choose a name and location for your project.
+
+Select the "Web Application (Model-View-Controller)" template. This template is based on the MVC architecture.
+
+Click "Create."
+
+Step 4: Implement Models
+
+Design and implement your models. In this case, you'll create a model for tasks. Right-click on the "Models" folder, add a new class, and name it "Task.cs":
+
+csharp
+Copy code
+using System;
+
+namespace YourNamespace.Models
+{
+    public class Task
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public DateTime DueDate { get; set; }
+        public bool IsCompleted { get; set; }
+    }
+}
+Step 5: Create Views
+
+Develop views for displaying and interacting with your tasks. In the "Views" folder, add a new folder named "Task" and create the following Razor views:
+
+Index.cshtml to list tasks.
+Create.cshtml to add new tasks.
+Edit.cshtml to edit existing tasks.
+Delete.cshtml to delete tasks.
+Use Razor syntax in your views to render dynamic content and forms.
+
+Step 6: Write Controllers
+
+Implement controllers to handle user requests and manage the interaction between models and views. In the "Controllers" folder, add a new controller named "TaskController":
+
+csharp
+Copy code
+using Microsoft.AspNetCore.Mvc;
+using YourNamespace.Models;
+using System.Collections.Generic;
+
+namespace YourNamespace.Controllers
+{
+    public class TaskController : Controller
+    {
+        private static List<Task> tasks = new List<Task>();
+
+        public IActionResult Index()
+        {
+            return View(tasks);
+        }
+
+        // Implement other actions like Create, Edit, and Delete.
+    }
+}
+Step 7: Implement Functionality
+
+In the TaskController, implement actions for listing tasks, creating tasks, editing tasks, and deleting tasks. Utilize the Task model to manage task data.
+
+Step 8: Testing
+
+Test your ASP.NET Core MVC application to ensure it functions as expected. Run the application, add, edit, and delete tasks to verify its functionality.
+
+Step 9: Documentation
+
+Create a document (PDF or Word) that explains the MVC architectural pattern, its benefits, and how you applied it in your ASP.NET Core MVC application. Describe your experience in creating the application and any challenges you encountered.
+
+Step 10: Submission
+
+Compile your project into a zip file containing the complete ASP.NET Core project files, including the source code, and the documentation document. Submit this zip file for your assignment.
+
+This example demonstrates the basics of creating an ASP.NET Core MVC application using the Model-View-Controller architectural pattern. In practice, you would build more complex applications with additional features and database interactions.

@@ -1,0 +1,82 @@
+Advanced C# Features - Properties and Methods
+
+Objective: Explore advanced C# features related to properties and methods.
+
+Task: In this assignment, you will create a C# class that represents an entity (e.g., a Person) with properties (e.g., Name, Age) and methods (e.g., GetDetails()). You will implement properties using getters and setters and create methods that perform various actions on the object's data. Include examples of property usage and method calls in your code.
+
+Requirements:
+
+Create a C# class (e.g., Person) with the following properties:
+
+Name (string)
+Age (int)
+At least one additional property of your choice (e.g., Address, PhoneNumber)
+Implement properties for each of these properties using both getters and setters.
+
+Implement custom logic or validation in the setters if necessary (e.g., ensure age is non-negative).
+Create at least three methods in your class that perform different actions related to the entity. For example:
+
+GetDetails(): This method should return a formatted string containing the details of the entity (e.g., "Name: John, Age: 30").
+Add other methods that perform actions like calculating a derived property, updating data, or any other relevant functionality.
+In a separate C# program (e.g., Program.cs), create instances of your class, set property values, and call the methods to demonstrate their functionality.
+
+Example (Person Class):
+
+
+class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public string Address { get; set; }
+
+    // Constructor
+    public Person(string name, int age, string address)
+    {
+        Name = name;
+        Age = age;
+        Address = address;
+    }
+
+    // Method to get details
+    public string GetDetails()
+    {
+        return $"Name: {Name}, Age: {Age}, Address: {Address}";
+    }
+
+    // Add other methods as needed
+    public void CelebrateBirthday()
+    {
+        Age++;
+    }
+}
+
+
+Example (Program.cs):
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Create a Person object
+        Person person1 = new Person("Alice", 25, "123 Main St");
+
+        // Access properties and call methods
+        Console.WriteLine(person1.GetDetails()); // Display details
+        person1.CelebrateBirthday(); // Increment age
+        Console.WriteLine(person1.GetDetails()); // Display updated details
+
+        // Create additional objects and demonstrate functionality
+        // ...
+    }
+}
+Submission: Submit the source code of your C# class (Person.cs) and the program (Program.cs) that demonstrates the usage of properties and methods with examples.
+
+Grading Criteria:
+
+Proper implementation of properties using getters and setters.
+Correct implementation of methods that perform various actions on the object's data.
+Demonstrated understanding of how to create class instances, set property values, and call methods in a separate program.
+Adherence to C# coding conventions and best practices.

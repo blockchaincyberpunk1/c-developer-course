@@ -1,0 +1,24 @@
+[Student Information System Class Diagram]
+
+Student
+- StudentID: int
+- FirstName: string
+- LastName: string
+- DateOfBirth: DateTime
+- Enrollments: List<Enrollment>
++ RegisterForCourse(course: Course): void
+
+Course
+- CourseID: int
+- CourseName: string
+- Instructor: string
+- Credits: int
+- Enrollments: List<Enrollment>
++ AddEnrollment(enrollment: Enrollment): void
+
+Enrollment
+- EnrollmentID: int
+- Student: Student
+- Course: Course
+- EnrollmentDate: DateTime
+- Grade: string

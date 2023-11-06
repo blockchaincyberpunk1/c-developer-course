@@ -1,0 +1,46 @@
+Git Basics
+
+Objective: Learn the fundamentals of version control with Git.
+
+Task: In this assignment, you will explore the basics of version control using Git. You will understand what version control is, why it is crucial for collaborative coding, and practice working with Git repositories. Specifically, you will create a Git repository for a sample project, add files to the repository, commit changes, and demonstrate how to view the commit history.
+
+Instructions:
+
+Introduction to Version Control (250 words): Begin by explaining what version control is and why it is essential in collaborative coding projects. Discuss the challenges it addresses, such as tracking changes, managing conflicts, and enabling teamwork.
+
+Setting Up Git (150 words): Provide instructions on how to set up Git on your preferred development environment (e.g., Windows, macOS, Linux). Mention any specific tools or Git clients you recommend for beginners.
+
+Creating a Git Repository (150 words): Describe the process of creating a new Git repository for a sample project. Explain how to initiate a Git repository, either by using the command-line or a Git GUI tool. Choose a sample project such as a basic web application, console application, or a text-based project.
+
+Adding and Committing Files (250 words): Walk through the steps of adding files to your Git repository and committing changes. Use the chosen sample project to demonstrate the following:
+
+How to add new files to the repository.
+How to stage changes for commit.
+How to create a commit with a meaningful message.
+Viewing Commit History (200 words): Explain how to view the commit history of your Git repository. Describe the commands or tools used to display a list of commits, including commit messages, timestamps, and authors. Illustrate how commit history helps in tracking changes over time.
+
+Pushing to Remote Repository (150 words): Briefly introduce the concept of remote repositories and remote collaboration. Explain how to push your local repository to a remote repository (e.g., on GitHub, GitLab, or Bitbucket). Provide a link to a sample remote repository if available.
+
+Conclusion (100 words): Summarize the key takeaways from your assignment, emphasizing the importance of Git as a version control system for software development.
+
+References: Include any references or sources you consulted while preparing your assignment.
+
+Submission Guidelines:
+
+Submit your assignment in a PDF or Word document format.
+Ensure that your assignment is well-organized and free of grammatical and spelling errors.
+Example Usage:
+
+For the sample project, you can choose a simple web application built with HTML and JavaScript. This allows you to demonstrate adding HTML and JavaScript files to the Git repository and committing changes as you make modifications to the project.
+
+Grading Criteria:
+
+Your assignment will be evaluated based on the following criteria:
+
+Clarity and completeness of explanations.
+Successful setup of Git and creation of a Git repository.
+Proper addition and committing of files.
+Accurate demonstration of viewing commit history.
+Understanding of the importance of version control in collaborative coding.
+Proper use of language and grammar.
+Adherence to the submission guidelines.

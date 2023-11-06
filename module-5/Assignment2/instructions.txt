@@ -1,0 +1,125 @@
+To create a functional Windows Forms application for task management in C#, you can follow these step-by-step instructions. In this example, we'll create a simple to-do list application.
+
+Step 1: Create a New Windows Forms Application Project
+
+Open Visual Studio or your preferred C# development environment.
+
+Create a new Windows Forms Application project:
+
+Go to "File" > "New" > "Project..."
+Select "Windows Forms App (.NET Core)" or a similar option.
+Give your project a name (e.g., "TaskManagerApp") and choose a location.
+Click "Create" or "OK" to create the project.
+Step 2: Design the User Interface (UI)
+
+Design the user interface of your Windows Forms application. Here's a basic design for a to-do list application:
+
+In the form designer, drag and drop the following controls from the Toolbox onto the form:
+
+Label: Place it at the top with the text "To-Do List."
+TextBox: Place it below the label to enter new tasks. Name it "textBoxTask."
+Button: Place it next to the textbox with the text "Add Task." Name it "buttonAddTask."
+ListBox: Place it below the textbox and button to display the list of tasks. Name it "listBoxTasks."
+Button: Place it below the ListBox with the text "Mark Complete." Name it "buttonMarkComplete."
+Button: Place it below the "Mark Complete" button with the text "Delete Task." Name it "buttonDeleteTask."
+Button: Place it below the "Delete Task" button with the text "Clear All Tasks." Name it "buttonClearAllTasks."
+Resize and align the controls as needed to create a visually appealing form.
+
+Step 3: Implement Functionality
+
+Implement the functionality of your task management application using C#. Here's a basic structure for the code:
+
+csharp
+Copy code
+using System;
+using System.Windows.Forms;
+
+namespace TaskManagerApp
+{
+    public partial class MainForm : Form
+    {
+        public MainForm()
+        {
+            InitializeComponent();
+        }
+
+        // Create a list to store tasks
+        private List<string> tasks = new List<string>();
+
+        // Event handler for the "Add Task" button
+        private void buttonAddTask_Click(object sender, EventArgs e)
+        {
+            string newTask = textBoxTask.Text.Trim();
+            
+            // Check if the task is not empty
+            if (!string.IsNullOrEmpty(newTask))
+            {
+                // Add the task to the list and update the ListBox
+                tasks.Add(newTask);
+                listBoxTasks.Items.Add(newTask);
+                textBoxTask.Clear();
+            }
+        }
+
+        // Event handler for the "Mark Complete" button
+        private void buttonMarkComplete_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = listBoxTasks.SelectedIndex;
+            
+            // Check if a task is selected
+            if (selectedIndex >= 0)
+            {
+                // Mark the selected task as complete by adding "[Completed]" to its description
+                tasks[selectedIndex] = "[Completed] " + tasks[selectedIndex];
+                listBoxTasks.Items[selectedIndex] = tasks[selectedIndex];
+            }
+        }
+
+        // Event handler for the "Delete Task" button
+        private void buttonDeleteTask_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = listBoxTasks.SelectedIndex;
+            
+            // Check if a task is selected
+            if (selectedIndex >= 0)
+            {
+                // Remove the selected task from the list and update the ListBox
+                tasks.RemoveAt(selectedIndex);
+                listBoxTasks.Items.RemoveAt(selectedIndex);
+            }
+        }
+
+        // Event handler for the "Clear All Tasks" button
+        private void buttonClearAllTasks_Click(object sender, EventArgs e)
+        {
+            // Clear the list of tasks and update the ListBox
+            tasks.Clear();
+            listBoxTasks.Items.Clear();
+        }
+    }
+}
+Step 4: Build and Run the Application
+
+Save your changes.
+
+Build the project by clicking "Build" > "Build Solution" in Visual Studio.
+
+Run the application by clicking "Start" or pressing F5.
+
+Step 5: Testing
+
+Test your application to ensure that all features work as expected. Add tasks, mark them as complete, delete tasks, and clear all tasks.
+
+Step 6: Documentation
+
+Add comments to your code to explain the purpose of each component and event handler.
+
+Step 7: Create a README File
+
+Create a README file (e.g., README.txt or README.md) in your project folder and provide instructions on how to run the Windows Forms application and how to use its features.
+
+Step 8: Submission
+
+Compile your project into a zip file containing the complete C# project, including all source code and the README file. Submit this zip file for your assignment.
+
+That's it! You've created a functional Windows Forms application for task management in C#. Users can add, mark as complete, delete, and clear tasks using this application.

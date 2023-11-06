@@ -1,0 +1,71 @@
+Advanced Exception Handling
+
+Objective: Explore advanced exception handling techniques in C# with a focus on exception filtering.
+
+Task: In this assignment, you will delve into advanced exception handling techniques in C#. Your objective is to research and explain the concept of exception filtering in C#. Afterward, you will write a C# program that utilizes exception filters to catch specific exceptions based on a condition. Demonstrate how exception filters can be used to handle exceptions more selectively and provide a clearer understanding of exception scenarios.
+
+Requirements:
+
+Exception Filtering Explanation: Research and provide a concise explanation of the concept of exception filtering in C#. Explain how exception filters work, why they are useful, and scenarios in which they can be applied. Include any relevant syntax or keywords associated with exception filtering.
+
+C# Program: Write a C# program that intentionally raises exceptions under certain conditions. Use exception filters to catch and handle specific exceptions based on conditions defined in the filters. Your program should demonstrate how exception filters allow for more precise handling of exceptions.
+
+Use of Exception Filters: In your program, provide clear examples of exception filters in action. Explain the conditions under which each exception filter is applied and how it affects the program's behavior.
+
+Explanation: Include a detailed explanation of how exception filters improve exception handling by allowing you to catch exceptions selectively. Describe scenarios in which this advanced technique can be particularly beneficial.
+
+Example Explanation:
+
+Exception filters are a powerful feature in C# that allow developers to selectively catch exceptions based on conditions. By using exception filters, we can improve the precision of exception handling and gain better insights into the causes of exceptions. In this assignment, we explore the concept of exception filters and demonstrate their usage in a C# program.
+
+Example (C# Code):
+
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        try
+        {
+            Divide(10, 0);
+        }
+        catch (Exception ex) when (ex is DivideByZeroException)
+        {
+            Console.WriteLine("DivideByZeroException caught with exception filter.");
+        }
+        catch (Exception ex) when (ex is OverflowException)
+        {
+            Console.WriteLine("OverflowException caught with exception filter.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Other exception caught: {ex.GetType()}");
+        }
+    }
+
+    static void Divide(int numerator, int denominator)
+    {
+        if (denominator == 0)
+        {
+            throw new DivideByZeroException();
+        }
+        else if (numerator == int.MaxValue && denominator == 1)
+        {
+            throw new OverflowException();
+        }
+        int result = numerator / denominator;
+        Console.WriteLine($"Result: {result}");
+    }
+}
+
+
+Submission: Submit your explanation of exception filtering in C# and the C# program demonstrating the usage of exception filters. Include clear explanations of the conditions under which each exception filter is applied and how they affect exception handling.
+
+Grading Criteria:
+
+Clear explanation of exception filtering in C#.
+Proper implementation of exception filters in the C# program.
+Effective use of exception filters to selectively catch and handle exceptions.
+Comprehensive and clear explanation of how exception filters improve exception handling.

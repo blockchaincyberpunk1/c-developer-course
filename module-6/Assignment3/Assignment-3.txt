@@ -1,0 +1,33 @@
+Introduction to ASP.NET Core
+
+Objective: Learn about ASP.NET Core and its advantages.
+
+Task: In this assignment, you will explore ASP.NET Core, a modern web framework, and understand how it differs from traditional ASP.NET. You will create a simple ASP.NET Core web application that serves a web page. Throughout the assignment, highlight any key differences or advantages compared to ASP.NET.
+
+Instructions:
+
+Research ASP.NET Core: Begin by researching and learning about ASP.NET Core. Understand what it is, its architecture, and its advantages over traditional ASP.NET. Pay attention to concepts like cross-platform compatibility and improved performance.
+
+Create an ASP.NET Core Web Application: Using Visual Studio or a code editor of your choice, create a new ASP.NET Core web application project. Choose the appropriate template for your application (e.g., MVC, Razor Pages) based on your preferences or familiarity.
+
+Develop a Simple Web Page: In your ASP.NET Core application, develop a simple web page. The content of this page can be static (e.g., "Hello, ASP.NET Core!"). Ensure that you follow the structure and conventions of ASP.NET Core.
+
+Highlight Differences and Advantages: As you work on your ASP.NET Core application, make notes on any key differences or advantages you observe compared to traditional ASP.NET. Consider factors like cross-platform compatibility, performance, and ease of development.
+
+Testing: Test your ASP.NET Core web application to ensure it serves the web page correctly. Verify that it runs smoothly and that there are no errors.
+
+Documentation: In your submission, include a document (PDF or Word) that explains what ASP.NET Core is, how it differs from traditional ASP.NET, and why it might be preferred in certain scenarios. Describe your experience in creating the ASP.NET Core web application, including any advantages or challenges you encountered.
+
+Example Usage:
+
+For example, you may highlight that ASP.NET Core allows you to build cross-platform applications that can run on Windows, Linux, and macOS. You might also mention its improved performance and scalability, thanks to its modular and lightweight architecture.
+
+Submission: Submit your ASP.NET Core web application project, including the source code, and the document (PDF or Word) that explains ASP.NET Core, its differences from traditional ASP.NET, and your experience in creating the application.
+
+Grading Criteria:
+
+Clear explanation of ASP.NET Core and its advantages.
+Creation of a functional ASP.NET Core web application.
+Accurate highlighting of differences or advantages compared to traditional ASP.NET.
+Successful testing of the application.
+Quality of documentation and insights shared.

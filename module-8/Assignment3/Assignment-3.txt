@@ -1,0 +1,50 @@
+Writing Unit Tests
+
+Objective: Gain proficiency in writing unit tests.
+
+Task: In this assignment, you will study the anatomy of a unit test, including setup, execution, and assertions. You will then develop unit tests for specific C# code snippets or methods. These unit tests should include test cases that cover different scenarios, such as boundary cases and error handling.
+
+Instructions:
+
+Introduction to Unit Testing (250 words): Start by providing an introduction to unit testing in C#. Explain what unit testing is, its importance in software development, and its role in ensuring code quality. Briefly discuss the structure of a unit test, including setup, execution of the code under test, and assertions.
+
+Select Code for Testing (100 words): Choose a specific C# code snippet or method that you will use as the subject of your unit tests. Justify your choice, emphasizing the significance of testing this code.
+
+Unit Test Development (500 words): Develop a set of unit tests for the chosen code snippet or method. These tests should cover a range of scenarios, including typical cases, boundary cases, and error conditions. Your unit tests should:
+
+Include appropriate setup, execution, and assertion phases.
+Be well-structured, with clear and meaningful test method names.
+Use test data that reflects various input scenarios.
+Account for edge cases and boundary conditions where applicable.
+Handle exceptions and error cases appropriately.
+Provide comments or explanations for complex test scenarios.
+Running and Reporting Tests (150 words): Describe how to run the unit tests you've developed. Explain how the test runner or testing framework executes the tests and reports the results (e.g., pass, fail, error). Mention any tools or IDE integration used for test execution.
+
+Benefits and Significance (200 words): Reflect on the benefits of writing unit tests, especially in terms of code quality, maintainability, and identifying bugs early in the development process. Explain how unit tests help in ensuring that code behaves as expected.
+
+Conclusion (100 words): Summarize the key takeaways from your assignment and emphasize the importance of writing effective unit tests in C# development.
+
+References: Include any references or sources you consulted while preparing your assignment.
+
+Submission Guidelines:
+
+Submit your assignment in a PDF or Word document format.
+Ensure that your assignment is well-organized and free of grammatical and spelling errors.
+Example Usage:
+
+For the code snippet to be tested, you can choose a simple function like calculating the factorial of a number or a method that performs string manipulation. Develop tests that cover various input scenarios and edge cases.
+
+Grading Criteria:
+
+Your assignment will be evaluated based on the following criteria:
+
+Clarity and completeness of explanations.
+Proper development of unit tests.
+Appropriateness of test scenarios and coverage.
+Effective handling of edge cases and error conditions.
+Understanding of the benefits of unit testing.
+Proper use of language and grammar.
+Adherence to the submission guidelines.
+
+
+

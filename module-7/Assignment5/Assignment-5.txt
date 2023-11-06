@@ -1,0 +1,51 @@
+Mini Project - Database-Driven Application
+
+Objective: Build a database-driven C# application using Entity Framework.
+
+Task: In this assignment, you will have the opportunity to build a database-driven C# application using Entity Framework. You are required to choose a project scenario, such as a blog platform, a product inventory system, or any other scenario that involves managing and interacting with data. Your application should effectively use Entity Framework to perform database operations like data entry, editing, and retrieval.
+
+Instructions:
+
+Choose a Project Scenario: Begin by selecting a project scenario for your database-driven application. Describe the chosen scenario and its core functionalities. For example, if you choose a blog platform, outline the features like creating and managing blog posts, user authentication, and commenting.
+
+Database Setup: Create a suitable database for your project. Define the necessary tables, their columns, and relationships. Choose an appropriate database management system (e.g., SQL Server, SQLite) for your project.
+
+Entity Framework Integration: Develop a C# application that integrates Entity Framework. Ensure that your application can connect to the database you created in the previous step.
+
+Core Functionalities: Implement the core functionalities of your chosen scenario using Entity Framework. These functionalities may include:
+
+Data Entry: Allow users to create new records (e.g., blog posts, products) and store them in the database.
+Data Editing: Enable users to update existing records with new information.
+Data Retrieval: Implement features for users to retrieve and view data from the database.
+Data Relationships: If your scenario involves multiple tables, demonstrate how Entity Framework manages relationships between them.
+User Interface: Design and create a user-friendly interface for your application. The interface should allow users to interact with the database and perform the functionalities you've implemented.
+
+Documentation: Provide detailed documentation for your project, including:
+
+Description of the project scenario.
+Explanation of the database structure, including table schemas and relationships.
+Code documentation with comments explaining key sections of your C# application.
+Instructions on how to use your application.
+Screenshots or diagrams to illustrate the user interface and data flow.
+Testing: Test your application thoroughly to ensure that it performs as expected. Include information about the testing process and any issues you encountered.
+
+Submission: Submit your project as a ZIP archive containing the following:
+
+The C# source code files.
+Any database scripts or files needed to recreate the database.
+Documentation in a PDF or Word document format.
+Example Usage:
+
+If you choose a blog platform as your scenario, your application should allow users to create and manage blog posts, view posts, and interact with comments. The database would contain tables for users, posts, and comments, with appropriate relationships.
+
+Grading Criteria:
+
+Clearly defined project scenario and core functionalities.
+Proper database setup with appropriate tables and relationships.
+Effective integration of Entity Framework into the C# application.
+User-friendly interface design.
+Comprehensive documentation explaining the project, database structure, code, and usage instructions.
+Thorough testing and problem-solving documentation if issues were encountered during development.
+
+
+

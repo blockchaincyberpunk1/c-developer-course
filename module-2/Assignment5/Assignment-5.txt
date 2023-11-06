@@ -1,0 +1,36 @@
+Mini Project - Object-Oriented Application
+
+Objective: Build an object-oriented C# application.
+
+Task: In this assignment, you will choose a project scenario (e.g., a simple game, a personal finance tracker) that involves multiple classes and object interactions. Your task is to design and implement the application using object-oriented principles, advanced C# features, and a user-friendly interface. Additionally, demonstrate the use of inheritance and polymorphism where applicable.
+
+Requirements:
+
+Project Scenario: Select a project scenario that requires the use of multiple classes and object-oriented design. For example, you can create a simple text-based game, a library management system, a personal finance tracker, or any other scenario that interests you.
+
+Object-Oriented Design: Design your application using object-oriented principles, including classes, objects, encapsulation, and abstraction. Ensure that your classes represent real-world entities or components relevant to your chosen scenario.
+
+Inheritance and Polymorphism: If applicable to your scenario, demonstrate the use of inheritance and polymorphism. For instance, you can create a base class and derived classes that inherit properties and methods from the base class.
+
+Advanced C# Features: Implement advanced C# features such as properties, methods, constructors, and exception handling. Ensure that your code follows best practices and is well-organized.
+
+User-Friendly Interface: If your project allows, create a user-friendly interface that enables users to interact with your application. This can be a command-line menu, a graphical user interface (GUI), or any other suitable interface for your scenario.
+
+Functionality: Your application should perform specific tasks or functions related to your chosen scenario. These tasks should demonstrate the interactions between objects and classes in your application.
+
+Documentation: Provide comments in your code to explain the purpose of each class, method, and significant block of code. Describe the interactions between objects and classes.
+
+Example (Library Management System):
+
+For example, if you choose to create a Library Management System, you may have classes for Book, Library, and User. You can implement inheritance by having a base Item class for both books and other library items. The system can allow users to borrow and return books, check available copies, and more.
+
+Submission: Submit the source code of your C# application, along with any necessary project files. Include comments in your code to explain the purpose of each class and method. Provide a brief user manual or documentation on how to use your application if it has a user interface.
+
+Grading Criteria:
+
+Effective use of object-oriented principles in the design of the application.
+Proper implementation of classes, methods, properties, and inheritance where applicable.
+Advanced C# features utilized correctly.
+User-friendly interface (if applicable) that enhances the user experience.
+Demonstration of functional interactions between objects and classes in the chosen scenario.
+Clear and well-organized code with appropriate comments.

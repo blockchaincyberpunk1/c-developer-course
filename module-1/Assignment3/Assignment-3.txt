@@ -1,0 +1,38 @@
+Control Structures and Loops in C#
+
+Objective: Gain proficiency in control structures and loops in C#.
+
+Task: In this assignment, you will write two separate C# programs to demonstrate your understanding of control structures and loops.
+
+Part 1: Control Structures (50 points)
+
+Write a C# program that accomplishes the following:
+
+Prompt the user to enter their age.
+Use an if-else statement to make a decision based on the user's age. The program should do the following:
+If the user's age is less than 18, display a message like "You are a minor."
+If the user's age is between 18 and 65 (inclusive), display a message like "You are an adult."
+If the user's age is greater than or equal to 65, display a message like "You are a senior citizen."
+Ensure that the program handles various age ranges correctly.
+
+Part 2: Loops (50 points)
+
+Write another C# program that accomplishes the following:
+
+Use a loop (either a for or while loop) to perform the following task:
+
+Display the numbers from 1 to 10, one number per line.
+Use a loop (either a for or while loop) to perform the following task:
+
+Calculate and display the sum of the first 10 natural numbers (1 + 2 + 3 + ... + 10).
+Submission: Submit the following for your assignment:
+
+The source code for both programs.
+Any additional instructions or explanations necessary to understand your code.
+Grading Criteria:
+
+Correctness and functionality of the control structures and loops in the programs.
+Proper handling of user input and decision-making based on the user's age.
+Proper implementation of loops to display numbers and calculate sums.
+Adherence to C# coding conventions and best practices.
+Overall presentation and organization of the assignment.

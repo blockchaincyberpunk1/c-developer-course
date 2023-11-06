@@ -1,0 +1,68 @@
+Step 1: Research Database Concepts
+
+Begin by researching and understanding the fundamental concepts of databases. Explain these concepts:
+
+Tables:
+A table is a fundamental database object used to store data in a structured format. Tables are composed of rows and columns, with each column representing a specific attribute of the data, and each row representing an individual data record.
+
+Rows and Columns:
+Rows are horizontal entities in a table, and each row represents a unique record or data entry. Columns, also known as fields, are vertical entities that define the structure of the table. Columns specify the type of data that can be stored in them, such as text, numbers, or dates.
+
+Keys:
+Keys are used to uniquely identify records within a table and establish relationships between tables. Primary keys are unique identifiers for each row in a table, ensuring that each record is distinct. Foreign keys are used to establish relationships between tables by referencing the primary key of another table.
+
+Relationships:
+Relationships in databases define how tables are related to each other. The most common types of relationships are one-to-one, one-to-many, and many-to-many. One-to-one relationships link one record in one table to one record in another. One-to-many relationships connect one record to multiple records, while many-to-many relationships link multiple records to multiple records.
+
+Step 2: Writing SQL Queries
+
+Now, let's write SQL queries to perform various operations on the hypothetical library database:
+
+a. Selecting Data:
+
+Query 1: Select all books from the Books table.
+
+sql
+Copy code
+SELECT * FROM Books;
+Explanation: This query retrieves all records from the Books table, displaying all columns and rows.
+
+Query 2: Select the title and publication year of books published in 2020.
+
+sql
+Copy code
+SELECT Title, PublicationYear FROM Books WHERE PublicationYear = 2020;
+Explanation: This query selects the Title and PublicationYear columns from the Books table but filters the results to include only books with a PublicationYear of 2020.
+
+b. Inserting Data:
+
+Query 3: Insert a new book into the Books table.
+
+sql
+Copy code
+INSERT INTO Books (Title, AuthorID, PublicationYear) VALUES ('New Book', 1, 2022);
+Explanation: This query inserts a new book record into the Books table, providing values for the Title, AuthorID, and PublicationYear columns.
+
+c. Updating Data:
+
+Query 4: Update the publication year of a specific book in the Books table.
+
+sql
+Copy code
+UPDATE Books SET PublicationYear = 2021 WHERE Title = 'Book Title';
+Explanation: This query updates the PublicationYear of a book with the Title 'Book Title' to 2021.
+
+d. Deleting Data:
+
+Query 5: Delete an author from the Authors table along with all their associated books from the Books table.
+
+sql
+Copy code
+DELETE FROM Authors WHERE AuthorID = 2;
+Explanation: This query deletes the author with AuthorID 2 from the Authors table, and due to a foreign key relationship (if configured), all associated books from the Books table would be deleted as well.
+
+Step 3: Submission
+
+Compile your explanations of the key database concepts and the SQL queries into a document (PDF or Word). Ensure that each query is accompanied by a clear and concise explanation of its purpose and how it achieves the desired result. Your submission should be properly formatted and organized.
+
+You can submit the document as your assignment submission.

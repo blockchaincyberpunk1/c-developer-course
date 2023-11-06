@@ -1,0 +1,32 @@
+Introduction to ASP.NET
+
+Objective: Explore the fundamentals of ASP.NET for web application development.
+
+Task: In this assignment, you will delve into the basics of ASP.NET, a widely-used web framework for building dynamic web applications with C#. You will describe what ASP.NET is, understand its role in web development, explore its architecture, and create a simple ASP.NET web application that displays a basic web page with dynamic content generated using C#.
+
+Instructions:
+
+Introduction to ASP.NET: Begin by providing an overview of what ASP.NET is. Explain its significance in the context of web development and how it simplifies the process of building dynamic web applications. Mention its key features and advantages.
+
+ASP.NET Architecture: Describe the architecture of ASP.NET. Explain concepts like the ASP.NET runtime, the request processing pipeline, and the role of web servers and browsers. Provide a high-level understanding of how ASP.NET processes user requests and generates responses.
+
+Creating a Simple ASP.NET Web Application: Develop a basic ASP.NET web application using C#. You can use Visual Studio or any other IDE of your choice. The application should include the following:
+
+A web page that displays a greeting message along with the current date and time.
+Use C# code to generate the dynamic content (i.e., the greeting message and the date/time).
+The web page should be styled appropriately using CSS for a basic visual appeal.
+Documentation: In your submission, include a document that provides a step-by-step explanation of how you created the ASP.NET web application. Explain the purpose of each component, the role of C# in generating dynamic content, and how you incorporated CSS for styling.
+
+Example Usage:
+
+You can create a simple ASP.NET web application that displays a "Hello, ASP.NET!" greeting along with the current date and time. The content is generated dynamically using C# code.
+
+Submission: Submit your ASP.NET project files, including the source code and any resource files (e.g., CSS files). Additionally, include a document (PDF or Word) that provides the step-by-step explanation of your application's development.
+
+Grading Criteria:
+
+Clear and concise description of ASP.NET's role and significance.
+Proper explanation of ASP.NET architecture concepts.
+Functional ASP.NET web application that meets the requirements.
+Clear documentation of the development process, including the role of C# and CSS.
+Overall organization and code quality.

@@ -1,0 +1,49 @@
+Mini Project - Simple Calculator in C#
+
+Objective: Apply C# programming fundamentals to build a simple calculator.
+
+Task: In this assignment, you will develop a C# program for a basic calculator that can perform arithmetic operations (addition, subtraction, multiplication, division) based on user input. You will create a user-friendly interface with a command-line menu to select the desired operation and input numbers.
+
+Requirements:
+
+Your calculator should provide the following functionality:
+
+Addition
+Subtraction
+Multiplication
+Division
+The program should display a menu to the user, allowing them to select the desired operation (e.g., by entering a number or a symbol).
+
+After selecting an operation, the program should prompt the user to input two numbers (operands) on separate lines.
+
+Perform the selected arithmetic operation on the input numbers and display the result to the user.
+
+Ensure error handling: Handle cases where the user provides invalid input (e.g., non-numeric input or division by zero).
+
+Example Output:
+
+Here's an example of what the program's interaction with the user might look like:
+
+
+Welcome to the Simple Calculator!
+Please select an operation:
+1. Addition (+)
+2. Subtraction (-)
+3. Multiplication (*)
+4. Division (/)
+
+Enter the number corresponding to your choice: 1
+
+Enter the first number: 10
+Enter the second number: 5
+
+Result: 10 + 5 = 15
+Submission: Submit the source code of your C# calculator program.
+
+Grading Criteria:
+
+Correct implementation of arithmetic operations (addition, subtraction, multiplication, division).
+Proper user interface with a clear menu and input prompts.
+Error handling for invalid input (e.g., non-numeric input, division by zero).
+Adherence to C# coding conventions and best practices.
+Overall functionality and usability of the calculator.

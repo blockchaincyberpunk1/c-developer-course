@@ -1,0 +1,106 @@
+Events and Delegates
+
+Objective: Learn about events and delegates in C#.
+
+Task: In this assignment, you will design a simple event-driven scenario, such as a notification system, where events are raised and handled. You will implement this scenario in C# using events and delegates. Create event handlers that respond to events and demonstrate how events are subscribed to and triggered.
+
+Requirements:
+
+Design a simple event-driven scenario: Select or create a scenario where events play a crucial role. For example, you can create a notification system where events represent different types of notifications (e.g., email notifications, SMS notifications, app notifications). Consider at least two different types of events.
+
+Create a C# class or set of classes that model this scenario. Define events using delegates for the chosen events.
+
+Implement event handlers (methods) for each event that respond to the events. These event handlers should simulate actions like sending notifications, displaying messages, or performing any relevant actions in your scenario.
+
+In a separate C# program (e.g., Program.cs), create instances of your classes, subscribe to events, and trigger events to demonstrate their functionality. Ensure you demonstrate how multiple subscribers can respond to the same event.
+
+Example (Notification System):
+
+
+using System;
+
+// Define a delegate for events
+public delegate void NotificationEventHandler(object sender, NotificationEventArgs e);
+
+// Define an event arguments class to carry event-specific data
+public class NotificationEventArgs : EventArgs
+{
+    public string Message { get; }
+
+    public NotificationEventArgs(string message)
+    {
+        Message = message;
+    }
+}
+
+// Create a class that raises events
+class NotificationSystem
+{
+    // Define events
+    public event NotificationEventHandler EmailNotification;
+    public event NotificationEventHandler SMSNotification;
+
+    // Method to send email notifications
+    public void SendEmailNotification(string message)
+    {
+        OnEmailNotification(new NotificationEventArgs(message));
+    }
+
+    // Method to send SMS notifications
+    public void SendSMSNotification(string message)
+    {
+        OnSMSNotification(new NotificationEventArgs(message));
+    }
+
+    // Raise events
+    protected virtual void OnEmailNotification(NotificationEventArgs e)
+    {
+        EmailNotification?.Invoke(this, e);
+    }
+
+    protected virtual void OnSMSNotification(NotificationEventArgs e)
+    {
+        SMSNotification?.Invoke(this, e);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Create a NotificationSystem instance
+        NotificationSystem notificationSystem = new NotificationSystem();
+
+        // Subscribe to events (event handlers)
+        notificationSystem.EmailNotification += EmailHandler;
+        notificationSystem.SMSNotification += SMSHandler;
+
+        // Trigger events
+        notificationSystem.SendEmailNotification("New email notification.");
+        notificationSystem.SendSMSNotification("New SMS notification.");
+    }
+
+    // Event handlers
+    static void EmailHandler(object sender, NotificationEventArgs e)
+    {
+        Console.WriteLine($"Email notification received: {e.Message}");
+    }
+
+    static void SMSHandler(object sender, NotificationEventArgs e)
+    {
+        Console.WriteLine($"SMS notification received: {e.Message}");
+    }
+}
+
+
+Submission: Submit the source code of your C# classes (NotificationSystem.cs) and the program (Program.cs) that demonstrates the event-driven scenario using events and delegates.
+
+Grading Criteria:
+
+Proper implementation of events and delegates in the chosen scenario.
+Correct definition and handling of event handlers.
+Demonstrated understanding of how to subscribe to events and trigger them.
+Adherence to C# coding conventions and best practices.
+
+
+

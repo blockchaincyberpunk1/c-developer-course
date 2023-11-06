@@ -1,0 +1,32 @@
+Basic C# Syntax
+
+Objective: Learn and practice basic C# syntax and programming concepts.
+
+Task: In this assignment, you will write a simple C# program that displays "Hello, World!" to the console. Additionally, you will explain the basic syntax elements used in your program, such as variables, data types, and the structure of a C# program.
+
+Instructions:
+
+Part 1: Writing the "Hello, World!" Program (60 points)
+
+Write a C# program that accomplishes the following:
+
+Displays the text "Hello, World!" to the console.
+Make sure your program is error-free and runs without any issues.
+
+Part 2: Explaining Basic Syntax Elements (40 points)
+
+Write an explanation of the basic syntax elements used in your program. Include the following points:
+Variables: Identify any variables used in your program and explain their purpose. Mention their data types (e.g., string, int) and how they are declared.
+Data Types: Describe the data types used in your program (e.g., string, int, etc.). Explain why you chose these data types.
+Console Output: Explain how the program displays "Hello, World!" to the console. Mention any specific C# methods or functions used for console output.
+Program Structure: Outline the overall structure of a C# program. Describe the role of elements such as the using statements and the Main method.
+Submission: Submit the following for your assignment:
+
+The complete C# program that displays "Hello, World!" to the console.
+A separate document that explains the basic syntax elements used in your program.
+Grading Criteria:
+
+Correctness and functionality of the "Hello, World!" program.
+Clarity and completeness of the explanations for basic syntax elements.
+Adherence to C# coding conventions and best practices.
+Overall presentation and organization of the assignment.

@@ -1,0 +1,131 @@
+Building a RESTful API with ASP.NET Core involves several steps. In this guide, I'll walk you through the process of creating a simple RESTful API for managing tasks.
+
+Step 1: Research RESTful APIs
+
+Before you begin, it's essential to understand what a RESTful API is and its importance in modern web development. Research the principles of REST, including statelessness and the use of HTTP methods.
+
+Step 2: Set Up Your Development Environment
+
+Ensure you have the necessary tools installed:
+
+Install Visual Studio (or use Visual Studio Code) with the ASP.NET Core workload.
+Install the .NET Core SDK.
+Step 3: Create an ASP.NET Core API Project
+
+Open Visual Studio (or Visual Studio Code).
+
+Go to "File" > "New" > "Project..."
+
+Select "ASP.NET Core Web Application" as your project type.
+
+Choose a name and location for your project.
+
+Select the "API" template.
+
+Click "Create."
+
+Step 4: Define the Resource
+
+In this example, we will create a simple API for managing tasks. Define a Task class with properties like Id, Title, Description, and IsCompleted in your project:
+
+csharp
+Copy code
+public class Task
+{
+    public int Id { get; set; }
+    public string Title { get; set; }
+    public string Description { get; set; }
+    public bool IsCompleted { get; set; }
+}
+Step 5: Implement CRUD Endpoints
+
+In the Controllers folder, you'll find ValuesController.cs. Rename it to TasksController.cs and implement CRUD endpoints:
+
+csharp
+Copy code
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+
+namespace YourNamespace.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class TasksController : ControllerBase
+    {
+        private static List<Task> tasks = new List<Task>();
+        private static int taskIdCounter = 1;
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Task>> GetTasks()
+        {
+            return tasks;
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<Task> GetTask(int id)
+        {
+            var task = tasks.Find(t => t.Id == id);
+            if (task == null)
+            {
+                return NotFound();
+            }
+            return task;
+        }
+
+        [HttpPost]
+        public ActionResult<Task> CreateTask(Task task)
+        {
+            task.Id = taskIdCounter++;
+            tasks.Add(task);
+            return CreatedAtAction(nameof(GetTask), new { id = task.Id }, task);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateTask(int id, Task task)
+        {
+            var existingTask = tasks.Find(t => t.Id == id);
+            if (existingTask == null)
+            {
+                return NotFound();
+            }
+
+            existingTask.Title = task.Title;
+            existingTask.Description = task.Description;
+            existingTask.IsCompleted = task.IsCompleted;
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteTask(int id)
+        {
+            var task = tasks.Find(t => t.Id == id);
+            if (task == null)
+            {
+                return NotFound();
+            }
+            tasks.Remove(task);
+            return NoContent();
+        }
+    }
+}
+Step 6: Test the API
+
+Run your ASP.NET Core API project and test the endpoints using tools like Postman or a web browser. You can perform CRUD operations on tasks through the API.
+
+Step 7: Validation and Error Handling
+
+Implement validation checks for incoming data in your API actions. Use appropriate status codes (e.g., 400 for bad requests) and meaningful error messages to handle errors effectively.
+
+Step 8: Documentation
+
+Create a document (PDF or Word) explaining RESTful API principles, the purpose of your API (task management), and how it aligns with RESTful principles. Describe your experience in creating the API, including any challenges faced and how you addressed them.
+
+Step 9: Submission
+
+Compile your project into a zip file containing the complete ASP.NET Core project files, including the source code, and the documentation document. Submit this zip file for your assignment.
+
+This example demonstrates the basics of creating a RESTful API with ASP.NET Core for managing tasks. You can expand on this foundation to build more complex APIs for various purposes.
+
+
+
+

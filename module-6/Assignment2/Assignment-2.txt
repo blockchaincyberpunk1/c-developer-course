@@ -1,0 +1,38 @@
+Building a Web Application
+
+Objective: Develop a functional web application using ASP.NET.
+
+Task: In this assignment, you will take a step further in your ASP.NET journey by building a functional web application from scratch. You will choose a hypothetical web application scenario, design a user-friendly interface using ASP.NET controls, and implement both the user interface and the functionality using C#. Your application should include features such as product listings, user registration, and shopping cart management.
+
+Instructions:
+
+Choose a Web Application Scenario: First, decide on a hypothetical web application scenario. For example, you can choose to create an online store, a social networking platform, a blog, or any other web-based application that interests you. Clearly state the purpose of your web application.
+
+Design the User Interface: Create a design for the user interface of your web application. Use ASP.NET controls (e.g., GridView, TextBox, Button) to build web pages that are visually appealing and user-friendly. Ensure that the design aligns with the chosen scenario (e.g., an online store should have product listings).
+
+Implement Functionality: Write the C# code to implement the functionality of your web application. This may include:
+
+Product listings and details.
+User registration and login.
+Shopping cart management (adding/removing items, calculating totals).
+Any additional features relevant to your chosen scenario.
+User Interaction: Implement user interactions, such as registering a new user account, adding items to the cart, and making purchases. Ensure that users can navigate through your application and perform tasks seamlessly.
+
+Validation: Implement appropriate validation for user inputs (e.g., validate user registration data, ensure correct product quantities in the cart).
+
+Documentation: In your submission, include a document (PDF or Word) that provides a clear overview of your web application. Explain the purpose of your application, its features, and how to interact with it. Provide screenshots to illustrate key functionalities.
+
+Example Usage:
+
+For instance, if you choose to create an online store, your web application should allow users to browse product listings, add items to a shopping cart, register as customers, and make purchases. You would design web pages that display product images, descriptions, and prices. Users can add products to the cart, and the cart should keep track of selected items and calculate the total price.
+
+Submission: Submit your entire web application project, including the source code and any resource files (e.g., images or CSS files). Additionally, include a comprehensive document (PDF or Word) that outlines the purpose and features of your application, provides clear instructions on how to interact with it, and includes screenshots to illustrate key functionalities.
+
+Grading Criteria:
+
+Clear definition of the web application scenario.
+Effective design and use of ASP.NET controls for the user interface.
+Functional implementation of web application features.
+User-friendly interactions and validation.
+Comprehensive documentation and instructions for use.
+Overall organization and code quality.

@@ -1,0 +1,36 @@
+Introduction to Windows Forms
+
+Objective: Gain an understanding of Windows Forms for desktop application development.
+
+Task: In this assignment, you will explore Windows Forms, a graphical user interface (GUI) framework for building Windows desktop applications using C#. You will create a simple Windows Forms application that displays a basic window with controls like labels, buttons, and textboxes. Additionally, you will implement event handlers for user interactions.
+
+Instructions:
+
+Research: Begin by researching what Windows Forms is and its significance in creating desktop applications. Provide a brief explanation in your assignment about the role of Windows Forms in developing Windows-based applications.
+
+Development:
+
+Create a new Windows Forms Application project using Visual Studio or any other C# development environment.
+Design a simple Windows Form with the following components:
+A label with the text "Welcome to Windows Forms."
+A textbox where users can enter their name.
+A button with the label "Submit."
+Implement an event handler for the button click event.
+When the user clicks the "Submit" button, your application should display a message box greeting the user by name, which is entered in the textbox. For example, "Hello, [User's Name]!"
+Documentation:
+
+Provide comments in your code to explain the purpose of each component and event handler.
+Include a README file that explains how to run the Windows Forms application and interact with it.
+Example Usage:
+
+When the user runs the application and enters their name in the textbox, they can click the "Submit" button. Upon clicking, a message box should appear with a personalized greeting based on the entered name.
+
+Submission: Submit the complete C# project, including all source code and the README file with instructions for running the application.
+
+Grading Criteria:
+
+Correct implementation of a Windows Forms application with a label, textbox, and button.
+Proper implementation of the button click event handler.
+The application should display a personalized greeting message in a message box.
+Code should be well-documented with comments.
+Instructions in the README file should be clear and concise.

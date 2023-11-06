@@ -1,0 +1,45 @@
+Collaborative Coding with Git
+
+Objective: Practice collaborative coding using Git.
+
+Task: In this assignment, you will experience real-world collaborative coding scenarios by working in groups of students. Each group will simulate a team of developers collaborating on a shared project using Git. Assign specific roles (e.g., developer, code reviewer) within each group, and create a Git repository to manage the project. Each student is responsible for contributing code to the repository, submitting pull requests, and reviewing code changes made by other team members.
+
+Instructions:
+
+Forming Groups (150 words): Form groups of 3-4 students. If possible, ensure that each group has members with different levels of coding experience (novice, intermediate, advanced).
+
+Assigning Roles (200 words): Within each group, assign specific roles to each team member. Roles may include:
+
+Developer: Responsible for writing code, adding features, and addressing issues.
+Code Reviewer: Responsible for reviewing pull requests, providing feedback, and ensuring code quality.
+Project Manager (optional): Responsible for overseeing the project's progress, coordinating tasks, and managing the project board (if used).
+Selecting a Project (150 words): Choose a simple coding project that can be completed within the assignment's timeframe. The project should be relevant to the skills and knowledge of the group members. Example projects may include a small web application, a command-line tool, or a simple game.
+
+Creating a Git Repository (250 words): Set up a Git repository for the chosen project on a platform like GitHub, GitLab, or Bitbucket. Decide on a branching strategy (e.g., feature branching) and establish a project board (if desired) to manage tasks and issues.
+
+Individual Contributions (200 words per student): Each student must make individual contributions to the project. This includes writing code, adding new features, fixing bugs, or improving existing code. Ensure that each contribution is made on a separate branch.
+
+Pull Requests (150 words per student): After completing a task or feature, each student should create a pull request (PR) on the Git repository. Include a descriptive title and detailed description of the changes made. Reference any issues related to the PR.
+
+Code Review (200 words per code reviewer): Code reviewers should thoroughly review pull requests submitted by their peers. Provide constructive feedback, suggest improvements, and ensure that code quality standards are met. Discuss any necessary changes with the developer.
+
+Iteration and Collaboration (250 words): Encourage collaboration within your group. If changes are required based on code reviews, iterate on the code until it meets the group's standards. Discuss any challenges or obstacles faced during the collaborative coding process.
+
+Final Project Submission (150 words): Once the project is complete or when the assignment deadline approaches, submit the final version of the project by merging all approved pull requests into the main branch.
+
+Conclusion (100 words): Reflect on your experience with collaborative coding using Git. Discuss the benefits and challenges of working as a team, sharing code, and utilizing version control.
+
+Submission Guidelines:
+
+Each group should submit a document (PDF or Word) that includes the assignment instructions, group members' contributions, screenshots of project boards (if used), and a summary of the collaborative coding experience.
+Grading Criteria:
+
+Your assignment will be evaluated based on the following criteria:
+
+Effective collaboration within the group.
+Clear assignment of roles and responsibilities.
+Successful setup of the Git repository.
+Individual contributions and pull requests from each student.
+Thoughtful and constructive code reviews.
+Demonstration of teamwork and communication skills.
+Reflection on the collaborative coding experience.

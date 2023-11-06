@@ -1,0 +1,85 @@
+Creating an ASP.NET Core web application and highlighting its advantages over traditional ASP.NET involves several steps. Here's a step-by-step guide:
+
+Step 1: Research ASP.NET Core
+
+Start by researching ASP.NET Core. Understand its architecture, key features, and advantages. Here are some key points to look for:
+
+Cross-platform Compatibility: ASP.NET Core can run on Windows, Linux, and macOS, making it cross-platform.
+Modular and Lightweight: ASP.NET Core is modular and lightweight, allowing you to include only the necessary components.
+Improved Performance: ASP.NET Core offers improved performance and scalability.
+Open Source: ASP.NET Core is open source and actively maintained by Microsoft.
+Step 2: Set Up Your Development Environment
+
+Before you begin, ensure you have the necessary tools installed:
+
+Install Visual Studio (or use Visual Studio Code) with the ASP.NET Core workload.
+Install the .NET Core SDK.
+Step 3: Create an ASP.NET Core Web Application
+
+Let's create a simple ASP.NET Core web application.
+
+Open Visual Studio (or Visual Studio Code).
+
+Go to "File" > "New" > "Project..."
+
+Select "ASP.NET Core Web Application" as your project type.
+
+Choose a name and location for your project.
+
+Select the "Web Application (Model-View-Controller)" template. You can choose other templates depending on your preference.
+
+Click "Create."
+
+Step 4: Develop a Simple Web Page
+
+In this step, you'll create a simple web page that displays "Hello, ASP.NET Core!".
+
+Open the "Views" folder in your project.
+
+Open the "Home" folder and the "Index.cshtml" file.
+
+Replace the content with the following HTML:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, ASP.NET Core!</title>
+</head>
+<body>
+    <h1>Hello, ASP.NET Core!</h1>
+</body>
+</html>
+Step 5: Highlight Differences and Advantages
+
+As you develop your ASP.NET Core application, make notes on the key differences or advantages compared to traditional ASP.NET. Here are some points to consider:
+
+Mention the ability to run ASP.NET Core applications on different operating systems.
+Highlight the improved performance and scalability of ASP.NET Core.
+Note the modular and lightweight nature of ASP.NET Core.
+Step 6: Testing
+
+Test your ASP.NET Core web application:
+
+Build your project by clicking "Build" > "Build Solution."
+
+Run the application by clicking "Debug" > "Start Without Debugging" or pressing Ctrl+F5.
+
+Open a web browser and navigate to https://localhost:5001 (or a different port if indicated in the console).
+
+You should see your "Hello, ASP.NET Core!" web page.
+
+Step 7: Documentation
+
+Create a document (PDF or Word) that explains ASP.NET Core, its differences from traditional ASP.NET, and your experience in creating the application. Provide insights into why ASP.NET Core might be preferred in certain scenarios.
+
+Step 8: Submission
+
+Compile your project into a zip file containing the complete ASP.NET Core project files, including the source code, and the documentation document. Submit this zip file for your assignment.
+
+This example demonstrates the basics of creating an ASP.NET Core web application and highlighting its advantages over traditional ASP.NET. In a real-world scenario, you would develop more complex applications with database interactions, authentication, and additional features.
+
+
+
+

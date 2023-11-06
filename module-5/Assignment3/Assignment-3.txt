@@ -1,0 +1,46 @@
+Introduction to WPF
+
+Objective: Explore Windows Presentation Foundation (WPF) and XAML for modern desktop application development.
+
+Task: In this assignment, you will learn about Windows Presentation Foundation (WPF) and the role of Extensible Application Markup Language (XAML) in creating modern desktop applications. You will create a simple WPF application that demonstrates the use of XAML for designing an attractive user interface with interactive elements.
+
+Instructions:
+
+Understanding WPF and XAML: Begin by explaining what Windows Presentation Foundation (WPF) is and why it is considered advantageous over Windows Forms for modern desktop application development. Also, describe the role of Extensible Application Markup Language (XAML) in designing user interfaces.
+
+Scenario Selection: Choose a hypothetical scenario for your WPF application. For example, you can create a weather app, a simple note-taking app, or a calculator.
+
+User Interface Design: Design the user interface (UI) of your WPF application using XAML. Include elements like labels, buttons, textboxes, and any other interactive components that are relevant to your chosen scenario.
+
+XAML Elements: Ensure that you use XAML to define the layout and appearance of your UI. Pay attention to XAML elements such as Window, Grid, Button, TextBlock, and TextBox to structure your UI.
+
+Functionality Implementation: Implement basic functionality in your application using C#. While this assignment primarily focuses on the UI design, include code to handle user interactions. For instance, if you are building a calculator, you can implement arithmetic operations when buttons are clicked.
+
+Event Handling: Implement event handlers for user interactions, such as button clicks, to execute the corresponding functionality.
+
+Style and Layout: Apply styles and layout techniques in XAML to make your UI visually appealing and user-friendly.
+
+Documentation: Provide comments in your XAML and C# code to explain the purpose of each XAML element and event handler.
+
+Testing: Thoroughly test your application to ensure that all interactive elements work as expected. Test various scenarios relevant to your application's functionality.
+
+User Instructions: Include a README file that explains how to run the WPF application and how to use its features.
+
+Example Usage:
+
+When a user runs your WPF application, they should see a visually appealing and functional user interface that matches your chosen scenario. They should be able to interact with the application's elements, such as buttons or textboxes, and observe responsive behavior.
+
+Submission: Submit the complete WPF project, including all XAML and C# source code and the README file with instructions for running and using the application.
+
+Grading Criteria:
+
+Correct implementation of the WPF application using XAML.
+Proper user interface design with interactive elements.
+Functional implementation of basic features relevant to your chosen scenario.
+Proper event handling for user interactions.
+Effective use of styles and layout techniques.
+Code should be well-documented with comments.
+Instructions in the README file should be clear and concise.
+
+
+

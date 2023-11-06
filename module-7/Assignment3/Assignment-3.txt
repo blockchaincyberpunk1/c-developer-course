@@ -1,0 +1,38 @@
+Introduction to Entity Framework
+
+Objective: Explore Entity Framework as an Object-Relational Mapping (ORM) tool.
+
+Task: In this assignment, you will explore Entity Framework as an Object-Relational Mapping (ORM) tool used in C# applications to simplify database interactions. You will explain what Entity Framework is and how it simplifies working with databases in C# applications. Additionally, you will develop a C# application that utilizes Entity Framework to perform basic database operations (CRUD) on a sample database table.
+
+Instructions:
+
+What is Entity Framework: Begin by explaining what Entity Framework is and its role in C# application development. Describe how Entity Framework acts as an ORM tool that bridges the gap between the application's object-oriented model and the relational database.
+
+Advantages of Entity Framework: Enumerate the advantages of using Entity Framework in C# applications. Discuss how it simplifies database operations, improves code maintainability, and enhances developer productivity.
+
+Database Setup: Create a simple database for your assignment. You can use an existing database system like SQL Server or SQLite. Define a sample table structure with relevant columns.
+
+C# Application Development: Develop a C# application that performs basic CRUD operations (Create, Read, Update, Delete) on the sample database table using Entity Framework. Your application should include the following functionality:
+
+Create: Add records to the database table.
+Read: Retrieve and display data from the database.
+Update: Modify existing records in the database.
+Delete: Remove records from the database.
+Documentation: Include detailed documentation in your assignment, explaining how Entity Framework is used in your C# application to interact with the database. Discuss the code structure, entity classes, context, and the specific Entity Framework methods used for each CRUD operation.
+
+Submission: Submit a document (PDF or Word) containing the following:
+
+An explanation of what Entity Framework is and its advantages.
+The database schema used in your assignment.
+The code for your C# application, including CRUD operations using Entity Framework.
+Documentation explaining the application's functionality and how Entity Framework is utilized.
+Example Usage:
+
+You can explain that Entity Framework simplifies database interactions by allowing developers to work with C# objects that map to database tables, and then show how you implemented CRUD operations in your C# application.
+
+Grading Criteria:
+
+Clear explanation of Entity Framework and its advantages.
+Proper database setup and schema.
+Functional C# application with CRUD operations using Entity Framework.
+Detailed documentation explaining the application and Entity Framework usage.
